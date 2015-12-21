@@ -47,18 +47,14 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\DeleteObjects.cs" />
      <Compile Include="Assets\Scripts\ObjectMovement.cs" />
-     <Compile Include="Assets\Scripts\SpawnScript.cs" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>G:/Programme/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
+     <Compile Include="Assets\Scripts\SpawnObject1.cs" />
+     <Compile Include="Assets\Scripts\SpawnObject2.cs" />
+     <Compile Include="Assets\Scripts\SpawnObject3.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>G:/Programme/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>G:/Programme/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>G:/Programme/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>G:/Programme/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
