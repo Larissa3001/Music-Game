@@ -45,11 +45,24 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\DeleteObjects.cs" />
-     <Compile Include="Assets\Scripts\ObjectMovement.cs" />
-     <Compile Include="Assets\Scripts\SpawnObject1.cs" />
-     <Compile Include="Assets\Scripts\SpawnObject2.cs" />
-     <Compile Include="Assets\Scripts\SpawnObject3.cs" />
+     <Compile Include="Assets\Scripts\Andere\DeleteObjects.cs" />
+     <Compile Include="Assets\Scripts\Andere\GlobalValues.cs" />
+     <Compile Include="Assets\Scripts\Andere\ObjectMovement.cs" />
+     <Compile Include="Assets\Scripts\Clicks\Object1Clicks.cs" />
+     <Compile Include="Assets\Scripts\Clicks\Object2Clicks.cs" />
+     <Compile Include="Assets\Scripts\Clicks\Object3Clicks.cs" />
+     <Compile Include="Assets\Scripts\Clicks\Object4Clicks.cs" />
+     <Compile Include="Assets\Scripts\Clicks\Object5Clicks.cs" />
+     <Compile Include="Assets\Scripts\Spawnen\SpawnObject1.cs" />
+     <Compile Include="Assets\Scripts\Spawnen\SpawnObject2.cs" />
+     <Compile Include="Assets\Scripts\Spawnen\SpawnObject3.cs" />
+     <Compile Include="Assets\Scripts\Spawnen\SpawnObject4.cs" />
+     <Compile Include="Assets\Scripts\Spawnen\SpawnObject5.cs" />
+     <Compile Include="Assets\Scripts\Version1\Version1Obj1Behaviour.cs" />
+     <Compile Include="Assets\Scripts\Version1\Version1Obj2Behaviour.cs" />
+     <Compile Include="Assets\Scripts\Version1\Version1Obj3Behaviour.cs" />
+     <Compile Include="Assets\Scripts\Version1\Version1Obj4Behaviour.cs" />
+     <Compile Include="Assets\Scripts\Version1\Version1Obj5Behaviour.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>G:/Programme/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
