@@ -18,14 +18,37 @@ public class Object1Clicks : MonoBehaviour
 
     }
 
-    void OnMouseDown()
+    void OnMouseOver()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+
+            clicksObj1 += 1;
+
+            GlobalValues.globalClicksObj1 += 1;
+
+
+            // Debug.Log("clickOb1 " + clicksObj1);
+        }
+
+        if (Input.GetMouseButtonDown(1))
+        {
+            clicksObj1 -= 1;
+
+            GlobalValues.globalClicksObj1 -= 1;
+   
+        }
+    }
+
+
+    /*void OnMouseDown()
     {
 
-        clicksObj1 += 1;
+        clicksObj2 += 1;
 
-        GlobalValues.clicksObj1 += 1;
+        GlobalValues.globalClicksObj2 += 1;
 
-        Debug.Log("clickOb1 " + clicksObj1);
+      //  Debug.Log("clickOb2 " + clicksObj2);
 
-    }
+    }*/
 }

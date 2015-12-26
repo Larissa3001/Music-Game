@@ -18,14 +18,23 @@ public class Object4Clicks : MonoBehaviour
 
     }
 
-    void OnMouseDown()
+    void OnMouseOver()
     {
+        if (Input.GetMouseButtonDown(0))
+        {
 
-        clicksObj4 += 1;
+            clicksObj4 += 1;
 
-        GlobalValues.clicksObj4 += 1;
+            GlobalValues.globalClicksObj4 += 1;
 
-        Debug.Log("clickOb4 " + clicksObj4);
+            // Debug.Log("clickOb1 " + clicksObj1);
+        }
 
+        if (Input.GetMouseButtonDown(1))
+        {
+            clicksObj4 -= 1;
+
+            GlobalValues.globalClicksObj4 -= 1;
+        }
     }
 }

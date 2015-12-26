@@ -18,15 +18,24 @@ public class Object5Clicks : MonoBehaviour
 
     }
 
-    void OnMouseDown()
+    void OnMouseOver()
     {
+        if (Input.GetMouseButtonDown(0))
+        {
 
-        clicksObj5 += 1;
+            clicksObj5 += 1;
 
-        GlobalValues.clicksObj5 += 1;
+            GlobalValues.globalClicksObj5 += 1;
 
-        Debug.Log("clickOb5 " + clicksObj5);
+            // Debug.Log("clickOb1 " + clicksObj1);
+        }
 
+        if (Input.GetMouseButtonDown(1))
+        {
+            clicksObj5 -= 1;
+
+            GlobalValues.globalClicksObj5 -= 1;
+        }
     }
 }
 
