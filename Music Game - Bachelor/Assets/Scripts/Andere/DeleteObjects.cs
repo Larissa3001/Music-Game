@@ -18,7 +18,7 @@ public class DeleteObjects : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.tag.Equals("Snowflake"))
+        if (col.gameObject.tag.Equals("Object"))
         {
             Destroy(col.gameObject);
         }
