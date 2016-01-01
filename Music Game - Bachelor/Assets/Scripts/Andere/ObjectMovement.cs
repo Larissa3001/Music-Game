@@ -26,12 +26,12 @@ public class ObjectMovement : MonoBehaviour
 
         if (objcol.enabled == false)
         {
-            Wait();
+           // Wait();
         }
     }
 
 
-    void OnTriggerEnter2D(Collider2D col){
+    /*void OnTriggerEnter2D(Collider2D col){
         if (col.gameObject.tag.Equals("ObjectVer1")){
             objcol.enabled = false;
         }
@@ -41,7 +41,7 @@ public class ObjectMovement : MonoBehaviour
 
         }
 
-    }
+    }*/
 
     void Wait() {
 
