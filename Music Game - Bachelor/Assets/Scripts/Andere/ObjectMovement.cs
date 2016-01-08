@@ -5,6 +5,8 @@ public class ObjectMovement : MonoBehaviour
 {
     public GameObject obj;
 
+    public float y;
+
     Collider2D objcol;
     //test
     float timeUntilSpawn = 1.2f;
@@ -12,6 +14,7 @@ public class ObjectMovement : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        y = 0.025f;
 
         objcol = GetComponent<Collider2D>();
 
@@ -22,7 +25,7 @@ public class ObjectMovement : MonoBehaviour
     {
         Vector3 vec = obj.transform.position;
 
-        obj.transform.position = new Vector3(vec.x - 0f, vec.y - 0.025f, vec.z - 0f);
+        obj.transform.position = new Vector3(vec.x - 0f, vec.y - y, vec.z - 0f);
 
         if (objcol.enabled == false)
         {

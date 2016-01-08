@@ -15,6 +15,23 @@ public class GlobalValues : MonoBehaviour {
     public static int clicksObj4;
     public static int clicksObj5;
 
+    public static int ZoneClicksObj1 = 0;
+    public static int ZoneClicksObj2 = 0;
+    public static int ZoneClicksObj3 = 0;
+    public static int ZoneClicksObj4 = 0;
+    public static int ZoneClicksObj5 = 0;
+
+    public static bool Zone1Obj1;
+    public static bool Zone2Obj1;
+    public static bool Zone1Obj2;
+    public static bool Zone2Obj2;
+    public static bool Zone1Obj3;
+    public static bool Zone2Obj3;
+    public static bool Zone1Obj4;
+    public static bool Zone2Obj4;
+    public static bool Zone1Obj5;
+    public static bool Zone2Obj5;
+
 
     // Use this for initialization
     void Start () {
@@ -30,6 +47,9 @@ public class GlobalValues : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+        //Debug.Log(Zone1Obj1 + "" + Zone2Obj1);
+
 
         Adjust();
 

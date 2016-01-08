@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class Object1Clicks : MonoBehaviour
@@ -6,10 +7,12 @@ public class Object1Clicks : MonoBehaviour
 
     public int clicksObj1 = 0;
 
+    
     // Use this for initialization
     void Start()
     {
-
+       
+        
     }
 
     // Update is called once per frame
@@ -27,6 +30,8 @@ public class Object1Clicks : MonoBehaviour
 
             GlobalValues.globalClicksObj1 += 1;
 
+            GlobalValues.ZoneClicksObj1 += 1;
+
 
             // Debug.Log("clickOb1 " + clicksObj1);
         }
@@ -36,7 +41,8 @@ public class Object1Clicks : MonoBehaviour
             clicksObj1 -= 1;
 
             GlobalValues.globalClicksObj1 -= 1;
-   
+
+
         }
     }
 

@@ -27,7 +27,9 @@ public class Object5Clicks : MonoBehaviour
 
             GlobalValues.globalClicksObj5 += 1;
 
-            // Debug.Log("clickOb1 " + clicksObj1);
+            GlobalValues.ZoneClicksObj5 += 1;
+
+             //Debug.Log("Klick!! " + GlobalValues.ZoneClicksObj5);
         }
 
         if (Input.GetMouseButtonDown(1))
@@ -35,6 +37,7 @@ public class Object5Clicks : MonoBehaviour
             clicksObj5 -= 1;
 
             GlobalValues.globalClicksObj5 -= 1;
+
         }
     }
 }

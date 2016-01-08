@@ -45,6 +45,8 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AudioMute.cs" />
+     <Compile Include="Assets\ClickArea.cs" />
      <Compile Include="Assets\Scripts\Andere\DeleteObjects.cs" />
      <Compile Include="Assets\Scripts\Andere\GlobalValues.cs" />
      <Compile Include="Assets\Scripts\Andere\ObjectMovement.cs" />
@@ -70,17 +72,21 @@
      <Compile Include="Assets\Scripts\Version2\Version2Obj3Behaviour.cs" />
      <Compile Include="Assets\Scripts\Version2\Version2Obj4Behaviour.cs" />
      <Compile Include="Assets\Scripts\Version2\Version2Obj5Behaviour.cs" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>G:/Programme/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
+     <Compile Include="Assets\Scripts\ZoneScripts\Zone1Obj1.cs" />
+     <Compile Include="Assets\Scripts\ZoneScripts\Zone1Obj2.cs" />
+     <Compile Include="Assets\Scripts\ZoneScripts\Zone1Obj3.cs" />
+     <Compile Include="Assets\Scripts\ZoneScripts\Zone1Obj4.cs" />
+     <Compile Include="Assets\Scripts\ZoneScripts\Zone1Obj5.cs" />
+     <Compile Include="Assets\Scripts\ZoneScripts\Zone2Obj1.cs" />
+     <Compile Include="Assets\Scripts\ZoneScripts\Zone2Obj2.cs" />
+     <Compile Include="Assets\Scripts\ZoneScripts\Zone2Obj3.cs" />
+     <Compile Include="Assets\Scripts\ZoneScripts\Zone2Obj4.cs" />
+     <Compile Include="Assets\Scripts\ZoneScripts\Zone2Obj5.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>G:/Programme/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>G:/Programme/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>G:/Programme/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>G:/Programme/Editor/Data/Managed/Mono.Cecil.dll</HintPath>

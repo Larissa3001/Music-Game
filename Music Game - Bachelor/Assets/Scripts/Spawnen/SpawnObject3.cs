@@ -11,8 +11,8 @@ public class SpawnObject3 : MonoBehaviour
     public float z;
 
 
-    float spawnCooldown = 4;
-    float timeUntilSpawn = 4;
+    public float spawnCooldown;
+    public float timeUntilSpawn;
 
 
     // Use this for initialization

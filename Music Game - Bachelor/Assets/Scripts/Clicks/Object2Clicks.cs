@@ -27,6 +27,8 @@ public class Object2Clicks : MonoBehaviour
 
             GlobalValues.globalClicksObj2 += 1;
 
+            GlobalValues.ZoneClicksObj2 += 1;
+
             // Debug.Log("clickOb1 " + clicksObj1);
         }
 
@@ -35,6 +37,7 @@ public class Object2Clicks : MonoBehaviour
             clicksObj2 -= 1;
 
             GlobalValues.globalClicksObj2 -= 1;
+
         }
     }
     

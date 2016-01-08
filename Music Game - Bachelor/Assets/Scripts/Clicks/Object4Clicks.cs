@@ -27,6 +27,8 @@ public class Object4Clicks : MonoBehaviour
 
             GlobalValues.globalClicksObj4 += 1;
 
+            GlobalValues.ZoneClicksObj4 += 1;
+
             // Debug.Log("clickOb1 " + clicksObj1);
         }
 
@@ -35,6 +37,7 @@ public class Object4Clicks : MonoBehaviour
             clicksObj4 -= 1;
 
             GlobalValues.globalClicksObj4 -= 1;
+
         }
     }
 }
