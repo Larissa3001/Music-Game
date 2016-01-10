@@ -32,11 +32,18 @@ public class GlobalValues : MonoBehaviour {
     public static bool Zone1Obj5;
     public static bool Zone2Obj5;
 
+    public static float speedY = 0.025f;
+
+    public static int lifes = 5;
+
 
     // Use this for initialization
     void Start () {
 
-        Adjust();
+        //Debug.Log(lifes);
+
+        AdjustLifes();
+        AdjustClicks();
 
         clicksObj1 = 0;
         clicksObj2 = 0;
@@ -48,10 +55,9 @@ public class GlobalValues : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        //Debug.Log(Zone1Obj1 + "" + Zone2Obj1);
 
-
-        Adjust();
+        AdjustLifes();
+        AdjustClicks();
 
       //  Debug.Log("Global1 " + globalClicksObj1 + " ClicksObj1 " + clicksObj1);
       //  Debug.Log("Global2 " + globalClicksObj2 + " ClicksObj2 " + clicksObj2);
@@ -61,7 +67,7 @@ public class GlobalValues : MonoBehaviour {
 
     }
 
-    void Adjust() {
+    void AdjustClicks() {
 
         //Object 1
 
@@ -157,5 +163,18 @@ public class GlobalValues : MonoBehaviour {
             globalClicksObj5 = 2;
         }
 
+    }
+
+    void AdjustLifes(){
+
+        if (lifes >= 5)
+        {
+            lifes = 5;
+        }
+
+        if (lifes <= 0)
+        {
+            lifes = 0;
+        }
     }
 }

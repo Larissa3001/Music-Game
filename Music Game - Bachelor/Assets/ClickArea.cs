@@ -66,7 +66,7 @@ public class ClickArea : MonoBehaviour
             newClick1 = clickObj1;
 
 
-            Debug.Log("click1 " + click1);
+            //Debug.Log("click1 " + click1);
         }
 
 
@@ -83,7 +83,7 @@ public class ClickArea : MonoBehaviour
             newClick2 = clickObj2;
 
 
-            Debug.Log("click2 " + click2);
+            //Debug.Log("click2 " + click2);
         }
 
 
@@ -100,7 +100,7 @@ public class ClickArea : MonoBehaviour
             newClick3 = clickObj3;
 
 
-            Debug.Log("click3 " + click3);
+            //Debug.Log("click3 " + click3);
         }
 
 
@@ -117,7 +117,7 @@ public class ClickArea : MonoBehaviour
             newClick4 = clickObj4;
 
 
-            Debug.Log("click4 " + click4);
+            //Debug.Log("click4 " + click4);
         }
 
 
@@ -134,7 +134,7 @@ public class ClickArea : MonoBehaviour
             newClick5 = clickObj5;
 
 
-            Debug.Log("click5 " + click5);
+           // Debug.Log("click5 " + click5);
         }
 
 
@@ -174,7 +174,8 @@ public class ClickArea : MonoBehaviour
         if (zone1 == false && zone2 == false)
         {
             AudioMute.Mute("Eins");
-            //Debug.Log("keine Zoneobj1 getroffen");
+            GlobalValues.lifes -= 1;
+            Debug.Log("keine Zoneobj1 getroffen");
         }
 
     }
@@ -208,6 +209,7 @@ public class ClickArea : MonoBehaviour
         if (zone1 == false && zone2 == false)
         {
             AudioMute.Mute("Zwei");
+            GlobalValues.lifes -= 1;
             //Debug.Log("keine Zoneobj2 getroffen");
         }
 
@@ -242,6 +244,7 @@ public class ClickArea : MonoBehaviour
         if (zone1 == false && zone2 == false)
         {
             AudioMute.Mute("Drei");
+            GlobalValues.lifes -= 1;
             //Debug.Log("keine Zoneobj3 getroffen");
         }
 
@@ -276,6 +279,7 @@ public class ClickArea : MonoBehaviour
         if (zone1 == false && zone2 == false)
         {
             AudioMute.Mute("Vier");
+            GlobalValues.lifes -= 1;
             //Debug.Log("keine Zoneobj4 getroffen");
         }
 
@@ -310,6 +314,7 @@ public class ClickArea : MonoBehaviour
         if (zone1 == false && zone2 == false)
         {
             AudioMute.Mute("Fünf");
+            GlobalValues.lifes -= 1;
             //Debug.Log("keine Zoneobj5 getroffen");
         }
 

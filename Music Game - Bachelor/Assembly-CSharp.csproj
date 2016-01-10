@@ -57,6 +57,9 @@
      <Compile Include="Assets\Scripts\Clicks\Object5Clicks.cs" />
      <Compile Include="Assets\Scripts\Level1Button.cs" />
      <Compile Include="Assets\Scripts\Level2Button.cs" />
+     <Compile Include="Assets\Scripts\LifeDisplay.cs" />
+     <Compile Include="Assets\Scripts\ObjectMovement2.cs" />
+     <Compile Include="Assets\Scripts\ObjectSpeed.cs" />
      <Compile Include="Assets\Scripts\Spawnen\SpawnObject1.cs" />
      <Compile Include="Assets\Scripts\Spawnen\SpawnObject2.cs" />
      <Compile Include="Assets\Scripts\Spawnen\SpawnObject3.cs" />
