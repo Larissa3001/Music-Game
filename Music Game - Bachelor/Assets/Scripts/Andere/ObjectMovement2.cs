@@ -23,21 +23,6 @@ public class ObjectMovement2 : MonoBehaviour
         Vector3 vec = obj.transform.position;
 
         obj.transform.position = new Vector3(vec.x - 0f, vec.y - GlobalValues.speedY, vec.z - 0f);
-
-
-        /*timeUntilSpeedUp -= Time.deltaTime;
-        if (timeUntilSpeedUp <= 0)
-        {
-            SpeedUp();
-
-            timeUntilSpeedUp = speedUpCooldown;
-        }*/
-
-    }
-
-    void SpeedUp()
-    {
-        GlobalValues.speedY += 0.005f;
     }
 
 }

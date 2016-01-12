@@ -155,27 +155,30 @@ public class ClickArea : MonoBehaviour
 
         if (zone1 == true && zone2 == false)
         {
-            AudioMute.Play("Eins");
+            GlobalValues.score += 50;
+            GlobalValues.combo = 0;
             //Debug.Log("Zone1obj1 getroffen");
         }
 
         if (zone2 == true && zone1 == false)
         {
-            AudioMute.Play("Eins");
+            GlobalValues.score += 100;
+            GlobalValues.combo += 1;
             //Debug.Log("Zone2obj1 getroffen");
         }
 
         if (zone2 == true && zone1 == true)
         {
-            AudioMute.Play("Eins");
+            GlobalValues.score += 100;
+            GlobalValues.combo += 1;
             //Debug.Log("Zone1/2obj1 getroffen");
         }
 
         if (zone1 == false && zone2 == false)
         {
-            AudioMute.Mute("Eins");
             GlobalValues.lifes -= 1;
-            Debug.Log("keine Zoneobj1 getroffen");
+            GlobalValues.combo = 0;
+            //Debug.Log("keine Zoneobj1 getroffen");
         }
 
     }
@@ -190,26 +193,29 @@ public class ClickArea : MonoBehaviour
 
         if (zone1 == true && zone2 == false)
         {
-            AudioMute.Play("Zwei");
+            GlobalValues.score += 50;
+            GlobalValues.combo = 0;
             //Debug.Log("Zone1obj2 getroffen");
         }
 
         if (zone2 == true && zone1 == false)
         {
-            AudioMute.Play("Zwei");
+            GlobalValues.score += 100;
+            GlobalValues.combo += 1;
             //Debug.Log("Zone2obj2 getroffen");
         }
 
         if (zone2 == true && zone1 == true)
         {
-            AudioMute.Play("Zwei");
+            GlobalValues.score += 100;
+            GlobalValues.combo += 1;
             //Debug.Log("Zone1/2obj2 getroffen");
         }
 
         if (zone1 == false && zone2 == false)
         {
-            AudioMute.Mute("Zwei");
             GlobalValues.lifes -= 1;
+            GlobalValues.combo = 0;
             //Debug.Log("keine Zoneobj2 getroffen");
         }
 
@@ -225,26 +231,29 @@ public class ClickArea : MonoBehaviour
 
         if (zone1 == true && zone2 == false)
         {
-            AudioMute.Play("Drei");
+            GlobalValues.score += 50;
+            GlobalValues.combo = 0;
             //Debug.Log("Zone1obj3 getroffen");
         }
 
         if (zone2 == true && zone1 == false)
         {
-            AudioMute.Play("Drei");
+            GlobalValues.score += 100;
+            GlobalValues.combo += 1;
             //Debug.Log("Zone2obj3 getroffen");
         }
 
         if (zone2 == true && zone1 == true)
         {
-            AudioMute.Play("Drei");
+            GlobalValues.score += 100;
+            GlobalValues.combo += 1;
             //Debug.Log("Zone1/2obj3 getroffen");
         }
 
         if (zone1 == false && zone2 == false)
         {
-            AudioMute.Mute("Drei");
             GlobalValues.lifes -= 1;
+            GlobalValues.combo = 0;
             //Debug.Log("keine Zoneobj3 getroffen");
         }
 
@@ -260,26 +269,29 @@ public class ClickArea : MonoBehaviour
 
         if (zone1 == true && zone2 == false)
         {
-            AudioMute.Play("Vier");
+            GlobalValues.score += 50;
+            GlobalValues.combo = 0;
             //Debug.Log("Zone1obj4 getroffen");
         }
 
         if (zone2 == true && zone1 == false)
         {
-            AudioMute.Play("Vier");
+            GlobalValues.score += 100;
+            GlobalValues.combo += 1;
             //Debug.Log("Zone2obj4 getroffen");
         }
 
         if (zone2 == true && zone1 == true)
         {
-            AudioMute.Play("Vier");
+            GlobalValues.score += 100;
+            GlobalValues.combo += 1;
             //Debug.Log("Zone1/2obj4 getroffen");
         }
 
         if (zone1 == false && zone2 == false)
         {
-            AudioMute.Mute("Vier");
             GlobalValues.lifes -= 1;
+            GlobalValues.combo = 0;
             //Debug.Log("keine Zoneobj4 getroffen");
         }
 
@@ -295,26 +307,29 @@ public class ClickArea : MonoBehaviour
 
         if (zone1 == true && zone2 == false)
         {
-            AudioMute.Play("Fünf");
+            GlobalValues.score += 50;
+            GlobalValues.combo = 0;
             //Debug.Log("Zone1obj5 getroffen");
         }
 
         if (zone2 == true && zone1 == false)
         {
-            AudioMute.Play("Fünf");
+            GlobalValues.score += 100;
+            GlobalValues.combo += 1;
             //Debug.Log("Zone2obj5 getroffen");
         }
 
         if (zone2 == true && zone1 == true)
         {
-            AudioMute.Play("Fünf");
+            GlobalValues.score += 100;
+            GlobalValues.combo += 1;
             //Debug.Log("Zone1/2obj5 getroffen");
         }
 
         if (zone1 == false && zone2 == false)
         {
-            AudioMute.Mute("Fünf");
             GlobalValues.lifes -= 1;
+            GlobalValues.combo = 0;
             //Debug.Log("keine Zoneobj5 getroffen");
         }
 

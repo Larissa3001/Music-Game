@@ -4,7 +4,7 @@ using System.Collections;
 public class SpawnObject1 : MonoBehaviour
 {
 
-    public GameObject Snow;
+    public GameObject Obj;
 
     public float x;
     public float y;
@@ -42,7 +42,7 @@ public class SpawnObject1 : MonoBehaviour
 
         Vector3 startPos1 = new Vector3(x, y, z);
 
-        GameObject spawnOb = Instantiate(Snow, startPos1, Quaternion.identity) as GameObject;
+        GameObject spawnOb = Instantiate(Obj, startPos1, Quaternion.identity) as GameObject;
 
     }
 }

@@ -33,17 +33,26 @@ public class LifeDisplay : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        Debug.Log(Lifes);
-
         Lifes = GlobalValues.lifes;
 
-        LifeAdjust();
+        LifeAdjustment();
 
 	}
 
-    void LifeAdjust()
+    void AudioAdjustment()
+    {
+
+    }
+
+    void LifeAdjustment()
     {
          if(Lifes >= 5){
+
+            AudioMute.Play("Eins");
+            AudioMute.Play("Zwei");
+            AudioMute.Play("Drei");
+            AudioMute.Play("Vier");
+            AudioMute.Play("Fünf");
 
             r1.enabled = true;
             r2.enabled = true;
@@ -54,6 +63,12 @@ public class LifeDisplay : MonoBehaviour {
 
         if (Lifes == 4){
 
+            AudioMute.Play("Eins");
+            AudioMute.Play("Zwei");
+            AudioMute.Play("Drei");
+            AudioMute.Play("Vier");
+            AudioMute.Mute("Fünf");
+
             r1.enabled = true;
             r2.enabled = true;
             r3.enabled = true;
@@ -62,6 +77,12 @@ public class LifeDisplay : MonoBehaviour {
         }
 
         if (Lifes == 3){
+
+            AudioMute.Play("Eins");
+            AudioMute.Play("Zwei");
+            AudioMute.Play("Drei");
+            AudioMute.Mute("Vier");
+            AudioMute.Mute("Fünf");
 
             r1.enabled = true;
             r2.enabled = true;
@@ -72,6 +93,12 @@ public class LifeDisplay : MonoBehaviour {
 
         if (Lifes == 2){
 
+            AudioMute.Play("Eins");
+            AudioMute.Play("Zwei");
+            AudioMute.Mute("Drei");
+            AudioMute.Mute("Vier");
+            AudioMute.Mute("Fünf");
+
             r1.enabled = true;
             r2.enabled = true;
             r3.enabled = false;
@@ -80,6 +107,12 @@ public class LifeDisplay : MonoBehaviour {
         }
 
         if (Lifes == 1){
+
+            AudioMute.Play("Eins");
+            AudioMute.Mute("Zwei");
+            AudioMute.Mute("Drei");
+            AudioMute.Mute("Vier");
+            AudioMute.Mute("Fünf");
 
             r1.enabled = true;
             r2.enabled = false;
@@ -90,6 +123,11 @@ public class LifeDisplay : MonoBehaviour {
 
         if (Lifes <= 0)
         {
+            AudioMute.Mute("Eins");
+            AudioMute.Mute("Zwei");
+            AudioMute.Mute("Drei");
+            AudioMute.Mute("Vier");
+            AudioMute.Mute("Fünf");
 
             r1.enabled = false;
             r2.enabled = false;

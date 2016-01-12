@@ -36,6 +36,10 @@ public class GlobalValues : MonoBehaviour {
 
     public static int lifes = 5;
 
+    public static int score;
+
+    public static int combo;
+
 
     // Use this for initialization
     void Start () {
