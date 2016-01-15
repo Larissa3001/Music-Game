@@ -10,8 +10,8 @@ public class SpawnObjects : MonoBehaviour
     float y;
     float z;
 
-    float minTime = 0.25f;
-    float maxTime = 1f;
+    float minTime;
+    float maxTime;
     float spawnTime;
     public float untilSpawnTime;
 
@@ -31,17 +31,38 @@ public class SpawnObjects : MonoBehaviour
 
     GameObject newOb;
 
+    float waitTime;
+    float coolDown;
+    int changeCounter = 0;
+
     // Use this for initialization
     void Start()
     {
         nextnr = 0;
         lastnr = 0;
 
+        minTime = 4f;
+        maxTime = 4f;
+
+        waitTime = 12.5f;
+        coolDown = 12.5f;
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        waitTime -= Time.deltaTime;
+        if (waitTime <= 0)
+        {
+            Debug.Log(changeCounter);
+            ChangeSpawnTimer();
+            changeCounter += 1;
+            Debug.Log(minTime + " " + maxTime);
+            waitTime = coolDown;
+        }
+
+
         //spawnTime = Mathf.Round(Random.Range(minTime, maxTime));
         spawnTime = Random.Range(minTime, maxTime);
 
@@ -52,6 +73,36 @@ public class SpawnObjects : MonoBehaviour
 
             untilSpawnTime = spawnTime;
         }
+    }
+
+    void ChangeSpawnTimer()
+    {
+
+        if (changeCounter == 0)
+        {
+            minTime = 1f;
+            maxTime = 3f;
+        }
+
+        if (changeCounter == 1)
+        {
+            minTime = 1f;
+            maxTime = 3f;
+        }
+
+        if (changeCounter == 2)
+        {
+            minTime = 0.5f;
+            maxTime = 1.5f;
+        }
+
+        if (changeCounter == 3)
+        {
+            minTime = 0.5f;
+            maxTime = 1.5f;
+        }
+
+
     }
 
     void Spawn()
@@ -117,8 +168,6 @@ public class SpawnObjects : MonoBehaviour
         spawnOb.name = objname;
             //Instantiate(Obj = GameObject.Find(spawnObject), startPos1, Quaternion.identity) as GameObject;
 
-       // GameObject newViking1 = (GameObject)Instantiate(viking1, pos, Quaternion.identity); //Instantiating Viking1.
-       // newViking1.name = viking1.name;
 
     }
 }

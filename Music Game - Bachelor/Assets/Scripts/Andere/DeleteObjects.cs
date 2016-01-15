@@ -22,6 +22,10 @@ public class DeleteObjects : MonoBehaviour
         {
             Destroy(col.gameObject);
         }
+        if (col.gameObject.tag.Equals("clicked"))
+        {
+            Destroy(col.gameObject);
+        }
 
     }
 

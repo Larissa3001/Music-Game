@@ -10,6 +10,7 @@ public class OBObj4 : MonoBehaviour
     BoxCollider2D[] coll;
     BoxCollider2D[] childcoll;
 
+    bool clicked = false;
 
     // Use this for initialization
     void Start()
@@ -64,10 +65,12 @@ public class OBObj4 : MonoBehaviour
             co.enabled = true;
         }
 
+        currentObj = test;
+
         // Debug.Log(this);
         //Debug.Log(currentObjName);
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && clicked == false)
         {
             ZoneTest4();
 
@@ -104,6 +107,10 @@ public class OBObj4 : MonoBehaviour
             GlobalValues.score += 50;
             //GlobalValues.combo = 0;
             //Debug.Log("Zone1obj4 getroffen");
+
+            ChangeSprite.ClickedRight(currentObj);
+
+            clicked = true;
         }
 
         if (zone2 == true && zone1 == false)
@@ -111,6 +118,10 @@ public class OBObj4 : MonoBehaviour
             GlobalValues.score += 50;
             //GlobalValues.combo += 1;
             //Debug.Log("Zone2obj4 getroffen");
+
+            ChangeSprite.ClickedRight(currentObj);
+
+            clicked = true;
         }
 
         if (zone2 == true && zone1 == true)
@@ -118,13 +129,21 @@ public class OBObj4 : MonoBehaviour
             GlobalValues.score += 100;
             GlobalValues.combo += 1;
             //Debug.Log("Zone1/2obj4 getroffen");
+
+            ChangeSprite.ClickedRight(currentObj);
+
+            clicked = true;
         }
 
         if (zone1 == false && zone2 == false)
         {
             GlobalValues.lifes -= 1;
-            //GlobalValues.combo = 0;
+            GlobalValues.combo = 0;
             //Debug.Log("keine Zoneobj4 getroffen");
+
+            ChangeSprite.ClickedWrong(currentObj);
+
+            clicked = true;
         }
 
     }

@@ -45,7 +45,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Score.cs" />
+     <Compile Include="Assets\MissedObject.cs" />
      <Compile Include="Assets\Scripts\Andere\AudioMute.cs" />
      <Compile Include="Assets\Scripts\Andere\DeleteObjects.cs" />
      <Compile Include="Assets\Scripts\Andere\GlobalValues.cs" />
@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\Andere\ObjectMovement.cs" />
      <Compile Include="Assets\Scripts\Andere\ObjectMovement2.cs" />
      <Compile Include="Assets\Scripts\Andere\ObjectSpeed.cs" />
+     <Compile Include="Assets\Scripts\ChangeSprite.cs" />
      <Compile Include="Assets\Scripts\ClickArea.cs" />
      <Compile Include="Assets\Scripts\Clicks\Object1Clicks.cs" />
      <Compile Include="Assets\Scripts\Clicks\Object2Clicks.cs" />
@@ -67,6 +68,7 @@
      <Compile Include="Assets\Scripts\OBObj3.cs" />
      <Compile Include="Assets\Scripts\OBObj4.cs" />
      <Compile Include="Assets\Scripts\OBObj5.cs" />
+     <Compile Include="Assets\Scripts\Score.cs" />
      <Compile Include="Assets\Scripts\SpawnObjects.cs" />
      <Compile Include="Assets\Scripts\Spawnen\SpawnObject1.cs" />
      <Compile Include="Assets\Scripts\Spawnen\SpawnObject2.cs" />
