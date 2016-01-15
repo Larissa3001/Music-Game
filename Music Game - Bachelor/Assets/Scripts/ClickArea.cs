@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿/*using UnityEngine;
 using System.Collections;
 
 public class ClickArea : MonoBehaviour
@@ -335,3 +335,4 @@ public class ClickArea : MonoBehaviour
 
     }
 }
+*/

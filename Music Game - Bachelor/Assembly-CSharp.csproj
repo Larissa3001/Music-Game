@@ -62,6 +62,11 @@
      <Compile Include="Assets\Scripts\GameModeBehaviour.cs" />
      <Compile Include="Assets\Scripts\Menue\Level1Button.cs" />
      <Compile Include="Assets\Scripts\Menue\Level2Button.cs" />
+     <Compile Include="Assets\Scripts\OBObj1.cs" />
+     <Compile Include="Assets\Scripts\OBObj2.cs" />
+     <Compile Include="Assets\Scripts\OBObj3.cs" />
+     <Compile Include="Assets\Scripts\OBObj4.cs" />
+     <Compile Include="Assets\Scripts\OBObj5.cs" />
      <Compile Include="Assets\Scripts\SpawnObjects.cs" />
      <Compile Include="Assets\Scripts\Spawnen\SpawnObject1.cs" />
      <Compile Include="Assets\Scripts\Spawnen\SpawnObject2.cs" />

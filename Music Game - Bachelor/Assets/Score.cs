@@ -26,6 +26,6 @@ public class Score : MonoBehaviour {
 
         score = GlobalValues.score;
 
-        text.text = "Score: " + score + "\n Combo: " + combo;
+        text.text = "Score: " + score + "\n Bonus: " + combo;
     }
 }

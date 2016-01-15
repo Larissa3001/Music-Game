@@ -18,7 +18,7 @@ public class ObjectMovement2 : MonoBehaviour
     void Update()
     {
 
-        Debug.Log(GlobalValues.speedY);
+        //Debug.Log(GlobalValues.speedY);
 
         Vector3 vec = obj.transform.position;
 
