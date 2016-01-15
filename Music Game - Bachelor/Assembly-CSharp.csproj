@@ -54,7 +54,6 @@
      <Compile Include="Assets\Scripts\Andere\ObjectMovement2.cs" />
      <Compile Include="Assets\Scripts\Andere\ObjectSpeed.cs" />
      <Compile Include="Assets\Scripts\ChangeSprite.cs" />
-     <Compile Include="Assets\Scripts\ClickArea.cs" />
      <Compile Include="Assets\Scripts\Clicks\Object1Clicks.cs" />
      <Compile Include="Assets\Scripts\Clicks\Object2Clicks.cs" />
      <Compile Include="Assets\Scripts\Clicks\Object3Clicks.cs" />

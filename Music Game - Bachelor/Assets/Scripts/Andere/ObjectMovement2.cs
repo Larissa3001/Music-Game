@@ -3,7 +3,6 @@ using System.Collections;
 
 public class ObjectMovement2 : MonoBehaviour
 {
-    public GameObject obj;
 
     //float speedUpCooldown = 2;
     //float timeUntilSpeedUp = 2;
@@ -20,9 +19,9 @@ public class ObjectMovement2 : MonoBehaviour
 
         //Debug.Log(GlobalValues.speedY);
 
-        Vector3 vec = obj.transform.position;
+        Vector3 vec = this.transform.position;
 
-        obj.transform.position = new Vector3(vec.x - 0f, vec.y - GlobalValues.speedY, vec.z - 0f);
+        this.transform.position = new Vector3(vec.x - 0f, vec.y - GlobalValues.speedY, vec.z - 0f);
     }
 
 }

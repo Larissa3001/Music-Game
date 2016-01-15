@@ -23,13 +23,13 @@ public class SpawnObjects : MonoBehaviour
     int nextnr;
     int lastnr;
 
-    public GameObject test1;
+    /*public GameObject test1;
     public GameObject test2;
     public GameObject test3;
     public GameObject test4;
-    public GameObject test5;
+    public GameObject test5;*/
 
-    GameObject newOb;
+    //GameObject newOb;
 
     float waitTime;
     float coolDown;
@@ -127,7 +127,7 @@ public class SpawnObjects : MonoBehaviour
             y = 7f;
             z = -2.5f;
 
-            newOb = test1;
+            //newOb = test1;
         }
 
         if (spawnObject == "test2") {
@@ -135,7 +135,7 @@ public class SpawnObjects : MonoBehaviour
             y = 7f;
             z = -2.5f;
 
-            newOb = test2;
+            //newOb = test2;
         }
 
         if (spawnObject == "test3") {
@@ -143,7 +143,7 @@ public class SpawnObjects : MonoBehaviour
             y = 7f;
             z = -2.5f;
 
-            newOb = test3;
+            //newOb = test3;
         }
 
         if (spawnObject == "test4") {
@@ -151,7 +151,7 @@ public class SpawnObjects : MonoBehaviour
             y = 7f;
             z = -2.5f;
 
-            newOb = test4;
+            //newOb = test4;
         }
 
         if (spawnObject == "test5") {
@@ -159,12 +159,12 @@ public class SpawnObjects : MonoBehaviour
             y = 7f;
             z = -2.5f;
 
-            newOb = test5;
+            //newOb = test5;
         }
 
         Vector3 startPos1 = new Vector3(x, y, z);
 
-        GameObject spawnOb = (GameObject)Instantiate(newOb, startPos1, Quaternion.identity);
+        GameObject spawnOb = Instantiate(Resources.Load(spawnObject, typeof(GameObject))) as GameObject;
         spawnOb.name = objname;
             //Instantiate(Obj = GameObject.Find(spawnObject), startPos1, Quaternion.identity) as GameObject;
 

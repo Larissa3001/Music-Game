@@ -12,6 +12,8 @@ public class OBObj4 : MonoBehaviour
 
     bool clicked = false;
 
+    bool clickable = false;
+
     // Use this for initialization
     void Start()
     {
@@ -36,7 +38,7 @@ public class OBObj4 : MonoBehaviour
     void Update()
     {
 
-
+        Debug.Log(clickable);
     }
 
     void OnMouseOver()
@@ -70,7 +72,7 @@ public class OBObj4 : MonoBehaviour
         // Debug.Log(this);
         //Debug.Log(currentObjName);
 
-        if (Input.GetMouseButtonDown(0) && clicked == false)
+        if (Input.GetMouseButtonDown(0) && clickable == true)
         {
             ZoneTest4();
 
@@ -144,6 +146,20 @@ public class OBObj4 : MonoBehaviour
             ChangeSprite.ClickedWrong(currentObj);
 
             clicked = true;
+        }
+
+    }
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.tag.Equals("ClickArea"))
+        {
+            clickable = true;
+
+            //Destroy(gameObject);
+        }
+        else
+        {
+            clickable = false;
         }
 
     }

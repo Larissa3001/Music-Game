@@ -12,9 +12,11 @@ public class OBObj1 : MonoBehaviour {
 
     bool clicked = false;
 
+    bool clickable = false;
 
-	// Use this for initialization
-	void Start () {
+
+    // Use this for initialization
+    void Start () {
 
         coll = this.gameObject.GetComponents<BoxCollider2D>();
 
@@ -35,7 +37,7 @@ public class OBObj1 : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-
+        Debug.Log(clickable);
     }
 
     void OnMouseOver()
@@ -69,8 +71,8 @@ public class OBObj1 : MonoBehaviour {
         // Debug.Log(this);
         //Debug.Log(currentObjName);
 
-            if (Input.GetMouseButtonDown(0) && clicked == false)
-            {
+            if (Input.GetMouseButtonDown(0) && clickable == true)
+        {
                 ZoneTest1();
 
         }
@@ -143,5 +145,19 @@ public class OBObj1 : MonoBehaviour {
 
             clicked = true;
             }
+    }
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.tag.Equals("ClickArea"))
+        {
+            clickable = true;
+
+            //Destroy(gameObject);
+        }
+        else
+        {
+            clickable = false;
+        }
+
     }
 }
