@@ -41,6 +41,18 @@ public class OBObj3 : MonoBehaviour
         Debug.Log(clickable);
     }
 
+    void OnMouseDown()
+    {
+        if (clickable == false)
+        {
+            GlobalValues.lifes -= 1;
+            GlobalValues.combo = 0;
+            ChangeSprite.ClickedWrong(currentObj);
+
+            clicked = true;
+        }
+    }
+
     void OnMouseOver()
 
     {

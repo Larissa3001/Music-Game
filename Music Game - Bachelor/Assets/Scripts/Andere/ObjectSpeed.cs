@@ -54,7 +54,7 @@ public class ObjectSpeed : MonoBehaviour {
     void SpeedUp()
     {
         
-        GlobalValues.speedY += 0.0125f;
+        GlobalValues.speedY += 0.00625f;
         Debug.Log(GlobalValues.speedY);
 
         firstSpeedUp = true;
