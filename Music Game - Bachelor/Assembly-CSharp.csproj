@@ -45,7 +45,10 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\ChooseMenu.cs" />
+     <Compile Include="Assets\MainMenu.cs" />
      <Compile Include="Assets\MissedObject.cs" />
+     <Compile Include="Assets\ModeMenu.cs" />
      <Compile Include="Assets\Scripts\Andere\AudioMute.cs" />
      <Compile Include="Assets\Scripts\Andere\DeleteObjects.cs" />
      <Compile Include="Assets\Scripts\Andere\GlobalValues.cs" />
