@@ -45,33 +45,33 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\ChooseMenu.cs" />
-     <Compile Include="Assets\MainMenu.cs" />
-     <Compile Include="Assets\MissedObject.cs" />
-     <Compile Include="Assets\ModeMenu.cs" />
      <Compile Include="Assets\Scripts\Andere\AudioMute.cs" />
+     <Compile Include="Assets\Scripts\Andere\ChangeSprite.cs" />
      <Compile Include="Assets\Scripts\Andere\DeleteObjects.cs" />
      <Compile Include="Assets\Scripts\Andere\GlobalValues.cs" />
      <Compile Include="Assets\Scripts\Andere\LifeDisplay.cs" />
      <Compile Include="Assets\Scripts\Andere\ObjectMovement.cs" />
      <Compile Include="Assets\Scripts\Andere\ObjectMovement2.cs" />
      <Compile Include="Assets\Scripts\Andere\ObjectSpeed.cs" />
-     <Compile Include="Assets\Scripts\ChangeSprite.cs" />
      <Compile Include="Assets\Scripts\Clicks\Object1Clicks.cs" />
      <Compile Include="Assets\Scripts\Clicks\Object2Clicks.cs" />
      <Compile Include="Assets\Scripts\Clicks\Object3Clicks.cs" />
      <Compile Include="Assets\Scripts\Clicks\Object4Clicks.cs" />
      <Compile Include="Assets\Scripts\Clicks\Object5Clicks.cs" />
-     <Compile Include="Assets\Scripts\GameModeBehaviour.cs" />
+     <Compile Include="Assets\Scripts\GameMode\GameModeBehaviour.cs" />
+     <Compile Include="Assets\Scripts\GameMode\MissedObject.cs" />
+     <Compile Include="Assets\Scripts\GameMode\OBObj1.cs" />
+     <Compile Include="Assets\Scripts\GameMode\OBObj2.cs" />
+     <Compile Include="Assets\Scripts\GameMode\OBObj3.cs" />
+     <Compile Include="Assets\Scripts\GameMode\OBObj4.cs" />
+     <Compile Include="Assets\Scripts\GameMode\OBObj5.cs" />
+     <Compile Include="Assets\Scripts\GameMode\Score.cs" />
+     <Compile Include="Assets\Scripts\GameMode\SpawnObjects.cs" />
+     <Compile Include="Assets\Scripts\Menue\ChooseMenu.cs" />
      <Compile Include="Assets\Scripts\Menue\Level1Button.cs" />
      <Compile Include="Assets\Scripts\Menue\Level2Button.cs" />
-     <Compile Include="Assets\Scripts\OBObj1.cs" />
-     <Compile Include="Assets\Scripts\OBObj2.cs" />
-     <Compile Include="Assets\Scripts\OBObj3.cs" />
-     <Compile Include="Assets\Scripts\OBObj4.cs" />
-     <Compile Include="Assets\Scripts\OBObj5.cs" />
-     <Compile Include="Assets\Scripts\Score.cs" />
-     <Compile Include="Assets\Scripts\SpawnObjects.cs" />
+     <Compile Include="Assets\Scripts\Menue\MainMenu.cs" />
+     <Compile Include="Assets\Scripts\Menue\ModeMenu.cs" />
      <Compile Include="Assets\Scripts\Spawnen\SpawnObject1.cs" />
      <Compile Include="Assets\Scripts\Spawnen\SpawnObject2.cs" />
      <Compile Include="Assets\Scripts\Spawnen\SpawnObject3.cs" />
@@ -97,11 +97,17 @@
      <Compile Include="Assets\Scripts\ZoneScripts\Zone2Obj3.cs" />
      <Compile Include="Assets\Scripts\ZoneScripts\Zone2Obj4.cs" />
      <Compile Include="Assets\Scripts\ZoneScripts\Zone2Obj5.cs" />
+ <Reference Include="UnityEngine.Advertisements">
+ <HintPath>G:/Programme/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>G:/Programme/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>G:/Programme/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>G:/Programme/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>G:/Programme/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
