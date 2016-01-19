@@ -77,11 +77,25 @@
      <Compile Include="Assets\Scripts\Spawnen\SpawnObject3.cs" />
      <Compile Include="Assets\Scripts\Spawnen\SpawnObject4.cs" />
      <Compile Include="Assets\Scripts\Spawnen\SpawnObject5.cs" />
+     <Compile Include="Assets\Scripts\StartMute.cs" />
+     <Compile Include="Assets\Scripts\States\StartDeactivation.cs" />
+     <Compile Include="Assets\Scripts\States\StateChanger.cs" />
+     <Compile Include="Assets\Scripts\States\States.cs" />
+     <Compile Include="Assets\Scripts\Version1\GMVersion1Obj1Behaviour.cs" />
+     <Compile Include="Assets\Scripts\Version1\GMVersion1Obj2Behaviour.cs" />
+     <Compile Include="Assets\Scripts\Version1\GMVersion1Obj3Behaviour.cs" />
+     <Compile Include="Assets\Scripts\Version1\GMVersion1Obj4Behaviour.cs" />
+     <Compile Include="Assets\Scripts\Version1\GMVersion1Obj5Behaviour.cs" />
      <Compile Include="Assets\Scripts\Version1\Version1Obj1Behaviour.cs" />
      <Compile Include="Assets\Scripts\Version1\Version1Obj2Behaviour.cs" />
      <Compile Include="Assets\Scripts\Version1\Version1Obj3Behaviour.cs" />
      <Compile Include="Assets\Scripts\Version1\Version1Obj4Behaviour.cs" />
      <Compile Include="Assets\Scripts\Version1\Version1Obj5Behaviour.cs" />
+     <Compile Include="Assets\Scripts\Version2\GMVersion2Obj1Behaviour.cs" />
+     <Compile Include="Assets\Scripts\Version2\GMVersion2Obj2Behaviour.cs" />
+     <Compile Include="Assets\Scripts\Version2\GMVersion2Obj3Behaviour.cs" />
+     <Compile Include="Assets\Scripts\Version2\GMVersion2Obj4Behaviour.cs" />
+     <Compile Include="Assets\Scripts\Version2\GMVersion2Obj5Behaviour.cs" />
      <Compile Include="Assets\Scripts\Version2\Version2Obj1Behaviour.cs" />
      <Compile Include="Assets\Scripts\Version2\Version2Obj2Behaviour.cs" />
      <Compile Include="Assets\Scripts\Version2\Version2Obj3Behaviour.cs" />
@@ -97,17 +111,11 @@
      <Compile Include="Assets\Scripts\ZoneScripts\Zone2Obj3.cs" />
      <Compile Include="Assets\Scripts\ZoneScripts\Zone2Obj4.cs" />
      <Compile Include="Assets\Scripts\ZoneScripts\Zone2Obj5.cs" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>G:/Programme/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>G:/Programme/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>G:/Programme/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>G:/Programme/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>G:/Programme/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
