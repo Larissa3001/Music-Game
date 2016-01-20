@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MMVersion1Obj1Behaviour : MonoBehaviour {
+public class MMVersion1Obj1Behaviour : MonoBehaviour
+{
 
     public GameObject obj;
 
@@ -24,7 +25,8 @@ public class MMVersion1Obj1Behaviour : MonoBehaviour {
 
     bool activ = false;
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         //obj.SetActive(false);
 
         tempo = 0;
@@ -46,7 +48,8 @@ public class MMVersion1Obj1Behaviour : MonoBehaviour {
 
 
     // Update is called once per frame
-    void Update () {
+    void Update()
+    {
 
         clicks = GlobalValues.clicksObj1;
         //Debug.Log("clicks: " +clicks);
@@ -59,10 +62,12 @@ public class MMVersion1Obj1Behaviour : MonoBehaviour {
         }
     }
 
-    void Active() {
+    void Active()
+    {
 
 
-        if (clicks == 1){
+        if (clicks == 1)
+        {
 
             ChangeMusic();
             sprite.enabled = true;
@@ -73,11 +78,12 @@ public class MMVersion1Obj1Behaviour : MonoBehaviour {
 
         }
 
-        else {
+        else
+        {
             MusicMute();
             sprite.enabled = false;
             activ = false;
-            
+
         }
 
     }
@@ -91,7 +97,7 @@ public class MMVersion1Obj1Behaviour : MonoBehaviour {
         adapt = vol + (y / 10);
 
         aud.volume = adapt;
-        
+
         //Debug.Log(vol);
     }
 
@@ -99,7 +105,8 @@ public class MMVersion1Obj1Behaviour : MonoBehaviour {
     {
         AudioSource music;
 
-        if (tempo == 0 && art == 0) {
+        if (tempo == 0 && art == 0)
+        {
             music = this.GetComponent<AudioSource>();
             state1.GetComponent<AudioSource>().mute = true;
             state2.GetComponent<AudioSource>().mute = true;
@@ -107,7 +114,8 @@ public class MMVersion1Obj1Behaviour : MonoBehaviour {
             music.mute = false;
             aud = music;
         }
-        if (tempo == 1 && art == 0) {
+        if (tempo == 1 && art == 0)
+        {
             this.GetComponent<AudioSource>().mute = true;
             music = state1.GetComponent<AudioSource>();
             state2.GetComponent<AudioSource>().mute = true;
@@ -115,7 +123,8 @@ public class MMVersion1Obj1Behaviour : MonoBehaviour {
             music.mute = false;
             aud = music;
         }
-        if (tempo == 0 && art == 1) {
+        if (tempo == 0 && art == 1)
+        {
             this.GetComponent<AudioSource>().mute = true;
             state1.GetComponent<AudioSource>().mute = true;
             music = state2.GetComponent<AudioSource>();
@@ -123,7 +132,8 @@ public class MMVersion1Obj1Behaviour : MonoBehaviour {
             music.mute = false;
             aud = music;
         }
-        if (tempo == 1 && art == 1) {
+        if (tempo == 1 && art == 1)
+        {
             this.GetComponent<AudioSource>().mute = true;
             state1.GetComponent<AudioSource>().mute = true;
             state2.GetComponent<AudioSource>().mute = true;
@@ -131,7 +141,7 @@ public class MMVersion1Obj1Behaviour : MonoBehaviour {
             music.mute = false;
             aud = music;
         }
-        
+
     }
 
     void MusicMute()
@@ -147,7 +157,7 @@ public class MMVersion1Obj1Behaviour : MonoBehaviour {
         if (Input.GetMouseButtonDown(1))
         {
             art += 1;
-            if(art == 2)
+            if (art == 2)
             {
                 art = 0;
             }
@@ -157,12 +167,12 @@ public class MMVersion1Obj1Behaviour : MonoBehaviour {
 
         if (Input.GetMouseButtonDown(0))
         {
-            if (!oneClick) 
+            if (!oneClick)
             {
                 oneClick = true;
 
-                doubleClickTimer = Time.time; 
-                                                    
+                doubleClickTimer = Time.time;
+
             }
             else
             {
@@ -179,9 +189,9 @@ public class MMVersion1Obj1Behaviour : MonoBehaviour {
 
         if (oneClick)
         {
- 
+
             if ((Time.time - doubleClickTimer) > wait)
-         {
+            {
 
                 oneClick = false;
 

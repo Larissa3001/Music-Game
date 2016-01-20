@@ -81,6 +81,11 @@
      <Compile Include="Assets\Scripts\States\StartDeactivation.cs" />
      <Compile Include="Assets\Scripts\States\StateChanger.cs" />
      <Compile Include="Assets\Scripts\States\States.cs" />
+     <Compile Include="Assets\Scripts\Version1\FMVersion1Obj1Behaviour.cs" />
+     <Compile Include="Assets\Scripts\Version1\FMVersion1Obj2Behaviour.cs" />
+     <Compile Include="Assets\Scripts\Version1\FMVersion1Obj3Behaviour.cs" />
+     <Compile Include="Assets\Scripts\Version1\FMVersion1Obj4Behaviour.cs" />
+     <Compile Include="Assets\Scripts\Version1\FMVersion1Obj5Behaviour.cs" />
      <Compile Include="Assets\Scripts\Version1\MMVersion1Obj1Behaviour.cs" />
      <Compile Include="Assets\Scripts\Version1\MMVersion1Obj2Behaviour.cs" />
      <Compile Include="Assets\Scripts\Version1\MMVersion1Obj3Behaviour.cs" />
@@ -91,6 +96,11 @@
      <Compile Include="Assets\Scripts\Version1\Version1Obj3Behaviour.cs" />
      <Compile Include="Assets\Scripts\Version1\Version1Obj4Behaviour.cs" />
      <Compile Include="Assets\Scripts\Version1\Version1Obj5Behaviour.cs" />
+     <Compile Include="Assets\Scripts\Version2\FMVersion2Obj1Behaviour.cs" />
+     <Compile Include="Assets\Scripts\Version2\FMVersion2Obj2Behaviour.cs" />
+     <Compile Include="Assets\Scripts\Version2\FMVersion2Obj3Behaviour.cs" />
+     <Compile Include="Assets\Scripts\Version2\FMVersion2Obj4Behaviour.cs" />
+     <Compile Include="Assets\Scripts\Version2\FMVersion2Obj5Behaviour.cs" />
      <Compile Include="Assets\Scripts\Version2\MMVersion2Obj1Behaviour.cs" />
      <Compile Include="Assets\Scripts\Version2\MMVersion2Obj2Behaviour.cs" />
      <Compile Include="Assets\Scripts\Version2\MMVersion2Obj3Behaviour.cs" />

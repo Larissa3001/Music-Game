@@ -19,16 +19,26 @@ public class Level1Button : MonoBehaviour {
         if (Input.GetMouseButtonDown(0))
         {
             if (Application.loadedLevelName == "Scene2")
+            { 
+            GlobalValues.globalClicksObj1 = 0;
+            GlobalValues.globalClicksObj2 = 0;
+            GlobalValues.globalClicksObj3 = 0;
+            GlobalValues.globalClicksObj4 = 0;
+            GlobalValues.globalClicksObj5 = 0;
 
+            Application.LoadLevel("Scene1");
+        }
+            if (Application.loadedLevelName == "Scene1")
+            {
                 GlobalValues.globalClicksObj1 = 0;
                 GlobalValues.globalClicksObj2 = 0;
                 GlobalValues.globalClicksObj3 = 0;
                 GlobalValues.globalClicksObj4 = 0;
                 GlobalValues.globalClicksObj5 = 0;
 
-            Application.LoadLevel("Scene1");
+                Application.LoadLevel("Scene1");
+            }
 
-            
         }
 
     }
