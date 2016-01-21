@@ -118,7 +118,7 @@ public class SpawnObjects : MonoBehaviour
         string objnr = nextnr.ToString();
         string objname = "Stern" + objnr;
 
-        number = Random.Range(1,5);
+        number = Random.Range(1,6);
         nr = number.ToString();
         spawnObject = "test" + nr;
 

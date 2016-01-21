@@ -21,18 +21,18 @@ public class ModeMenu : MonoBehaviour {
 
         //GUI.Box(new Rect(10, Screen.height / 2 - 100, 200, 125), "");
 
-        if (GUI.Button(new Rect(35, Screen.height / 2 - 65, 150, 25), "Free Mode"))
+        if (GUI.Button(new Rect(35, Screen.height / 2 - 100, 150, 25), "Free Mode"))
         {
             Application.LoadLevel("ChooseSong");
         }
         
 
-        if (GUI.Button(new Rect(35, Screen.height / 2 - 30, 150, 25), "Music Mode"))
+        if (GUI.Button(new Rect(35, Screen.height / 2 - 65, 150, 25), "Music Mode"))
         {
             Application.LoadLevel("MusicMode");
         }
 
-        if (GUI.Button(new Rect(35, Screen.height / 2 + 5, 150, 25), "Game Mode"))
+        if (GUI.Button(new Rect(35, Screen.height / 2 - 30, 150, 25), "Game Mode"))
         {
             Application.LoadLevel("GameMode");
         }

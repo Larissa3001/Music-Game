@@ -8,8 +8,8 @@ public class MMVersion2Obj3Behaviour : MonoBehaviour
 
     int clicks = 0;
 
-    int tempo;
-    int art;
+    public static int tempo;
+    public static int art;
 
     SpriteRenderer sprite;
     Collider2D col;

@@ -19,20 +19,25 @@ public class MainMenu : MonoBehaviour {
 
         //GUI.Box(new Rect(10, Screen.height / 2 - 100, 200, 125), "");
 
-        if (GUI.Button(new Rect(35, Screen.height / 2 - 65, 150, 25), "Choose Mode"))
+        if (GUI.Button(new Rect(35, Screen.height / 2 - 100, 150, 25), "Choose Mode"))
         {
             Application.LoadLevel("ModeMenu");
         }
 
-        if (GUI.Button(new Rect(35, Screen.height / 2 - 30, 150, 25), "Quit Game"))
+        if (GUI.Button(new Rect(35, Screen.height / 2 - 65, 150, 25), "Quit Game"))
         {
             Application.Quit();
         }
 
-        if (GUI.Button(new Rect(35, Screen.height / 2 + 65, 150, 25), "Reset Game"))
+        if (GUI.Button(new Rect(35, Screen.height / 2 - 30, 150, 25), "Highscore"))
+        {
+            Application.LoadLevel("Highscore");
+        }
+
+        /*if (GUI.Button(new Rect(35, Screen.height / 2 + 65, 150, 25), "Reset Game"))
         {
             ResetGame(); ;
-        }
+        }*/
 
     }
 

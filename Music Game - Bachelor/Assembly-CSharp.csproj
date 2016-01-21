@@ -45,7 +45,6 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Highscore.cs" />
      <Compile Include="Assets\Scripts\Andere\AudioMute.cs" />
      <Compile Include="Assets\Scripts\Andere\ChangeSprite.cs" />
      <Compile Include="Assets\Scripts\Andere\DeleteObjects.cs" />
@@ -54,6 +53,7 @@
      <Compile Include="Assets\Scripts\Andere\ObjectMovement.cs" />
      <Compile Include="Assets\Scripts\Andere\ObjectMovement2.cs" />
      <Compile Include="Assets\Scripts\Andere\ObjectSpeed.cs" />
+     <Compile Include="Assets\Scripts\AudioLoad.cs" />
      <Compile Include="Assets\Scripts\Clicks\Object1Clicks.cs" />
      <Compile Include="Assets\Scripts\Clicks\Object2Clicks.cs" />
      <Compile Include="Assets\Scripts\Clicks\Object3Clicks.cs" />
@@ -68,11 +68,16 @@
      <Compile Include="Assets\Scripts\GameMode\OBObj5.cs" />
      <Compile Include="Assets\Scripts\GameMode\Score.cs" />
      <Compile Include="Assets\Scripts\GameMode\SpawnObjects.cs" />
+     <Compile Include="Assets\Scripts\GameModeGUI.cs" />
+     <Compile Include="Assets\Scripts\Highscore.cs" />
      <Compile Include="Assets\Scripts\Menue\ChooseMenu.cs" />
      <Compile Include="Assets\Scripts\Menue\Level1Button.cs" />
      <Compile Include="Assets\Scripts\Menue\Level2Button.cs" />
      <Compile Include="Assets\Scripts\Menue\MainMenu.cs" />
      <Compile Include="Assets\Scripts\Menue\ModeMenu.cs" />
+     <Compile Include="Assets\Scripts\MusicGameGUI.cs" />
+     <Compile Include="Assets\Scripts\Scene1FMGUI.cs" />
+     <Compile Include="Assets\Scripts\Scene2FMGUI.cs" />
      <Compile Include="Assets\Scripts\Spawnen\SpawnObject1.cs" />
      <Compile Include="Assets\Scripts\Spawnen\SpawnObject2.cs" />
      <Compile Include="Assets\Scripts\Spawnen\SpawnObject3.cs" />

@@ -17,9 +17,12 @@ public class LifeDisplay : MonoBehaviour {
 
 
     public static int Lifes = GlobalValues.lifes;
+    public static bool end;
 
 	// Use this for initialization
 	void Start () {
+
+        end = false;
 
         r1 = L1.GetComponent<SpriteRenderer>();
         r2 = L2.GetComponent<SpriteRenderer>();
@@ -40,10 +43,52 @@ public class LifeDisplay : MonoBehaviour {
 
 	}
 
-    void AudioAdjustment()
+    void OnGUI()
     {
+        GUIStyle titleStyle = new GUIStyle();
+        FontStyle fontStyle;
 
+        //titleStyle.fontStyle = FontStyle.Bold;
+        titleStyle.normal.textColor = Color.white;
+        titleStyle.fontSize = 20;
+
+        if (end) {
+            GUI.Box(new Rect(200, Screen.height / 2 - 100, 250, 200), "");
+
+            GUI.Label(new Rect(272, Screen.height / 2 - 50, 150, 25), "Game Over!", titleStyle);
+
+            if ((GUI.Button(new Rect(245, Screen.height / 2 - 10, 80, 25), "Neustart?")))
+            {
+                resetGame();
+                Application.LoadLevel("GameMode");
+            }
+
+            if ((GUI.Button(new Rect(335, Screen.height / 2 - 10, 80, 25), "Highscore!")))
+            {
+                resetGame();
+                Application.LoadLevel("Highscore");
+            }
+
+            if ((GUI.Button(new Rect(288, Screen.height / 2 + 30, 80, 25), "Menü!")))
+            {
+                resetGame();
+                Application.LoadLevel("MainMenu");
+            }
+            
+
+        }
     }
+
+    void resetGame()
+    {
+        end = false;
+        GlobalValues.lifes = 5;
+        GlobalValues.combo = 0;
+        GlobalValues.score = 0;
+        Time.timeScale = 1;
+    }
+
+
 
     void LifeAdjustment()
     {
@@ -139,6 +184,10 @@ public class LifeDisplay : MonoBehaviour {
             r5.enabled = false;
 
             //Ende
+
+            end = true;
+            Time.timeScale = 0;
+
             GlobalValues.lifes = 0;
 
             Highscore.saveHighscore(GlobalValues.score);
