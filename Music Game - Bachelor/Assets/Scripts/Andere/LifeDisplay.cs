@@ -37,6 +37,7 @@ public class LifeDisplay : MonoBehaviour {
 
         LifeAdjustment();
 
+
 	}
 
     void AudioAdjustment()
@@ -59,6 +60,8 @@ public class LifeDisplay : MonoBehaviour {
             r3.enabled = true;
             r4.enabled = true;
             r5.enabled = true;
+
+            GlobalValues.lifes = 5;
         }
 
         if (Lifes == 4){
@@ -136,6 +139,9 @@ public class LifeDisplay : MonoBehaviour {
             r5.enabled = false;
 
             //Ende
+            GlobalValues.lifes = 0;
+
+            Highscore.saveHighscore(GlobalValues.score);
         }
     }
 }

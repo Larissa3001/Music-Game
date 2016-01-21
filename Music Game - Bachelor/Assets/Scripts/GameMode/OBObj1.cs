@@ -42,7 +42,7 @@ public class OBObj1 : MonoBehaviour {
 
     void OnMouseDown()
     {
-        if(clickable == false)
+        if(clickable == false && clicked == false)
         {
             GlobalValues.lifes -= 1;
             GlobalValues.combo = 0;
@@ -83,7 +83,7 @@ public class OBObj1 : MonoBehaviour {
         // Debug.Log(this);
         //Debug.Log(currentObjName);
 
-            if (Input.GetMouseButtonDown(0) && clickable == true)
+            if (Input.GetMouseButtonDown(0) && clickable == true && clicked == false)
         {
                 ZoneTest1();
 

@@ -19,17 +19,26 @@ public class GameModeBehaviour : MonoBehaviour {
         Lifes = GlobalValues.lifes;
         Combo = GlobalValues.combo;
 
+
+
         ComboBonus();
 
     }
 
     void ComboBonus()
     {
-        if(Combo == 3)
+
+        if(Combo == 3 && Lifes >= 5)
+        {
+            GlobalValues.score += 150;
+            GlobalValues.combo = 0;
+
+
+        }
+        else if(Combo == 3 && Lifes < 5)
         {
             GlobalValues.lifes += 1;
             GlobalValues.combo = 0;
-
         }
     }
 }
