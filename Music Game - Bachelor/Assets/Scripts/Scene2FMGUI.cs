@@ -27,13 +27,13 @@ public class Scene2FMGUI : MonoBehaviour {
 
         GUI.color = Color.white;
 
-        if (GUI.Button(new Rect(585, Screen.height / 2 + 60, 80, 25), "Neustart"))
+        if (GUI.Button(new Rect(Screen.width - 85, Screen.height / 2 + 60, 80, 25), "Neustart"))
         {
             resetGame();
             Application.LoadLevel("Scene2");
         }
 
-        if (GUI.Button(new Rect(585, Screen.height / 2 + 100, 80, 25), "Menü"))
+        if (GUI.Button(new Rect(Screen.width - 85, Screen.height / 2 + 100, 80, 25), "Menü"))
         {
             resetGame();
             Application.LoadLevel("MainMenu");

@@ -54,6 +54,7 @@
      <Compile Include="Assets\Scripts\Andere\ObjectMovement2.cs" />
      <Compile Include="Assets\Scripts\Andere\ObjectSpeed.cs" />
      <Compile Include="Assets\Scripts\AudioLoad.cs" />
+     <Compile Include="Assets\Scripts\AudioSave.cs" />
      <Compile Include="Assets\Scripts\Clicks\Object1Clicks.cs" />
      <Compile Include="Assets\Scripts\Clicks\Object2Clicks.cs" />
      <Compile Include="Assets\Scripts\Clicks\Object3Clicks.cs" />
