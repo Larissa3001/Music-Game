@@ -75,22 +75,22 @@ public class Highscore : MonoBehaviour {
 
 
 
-        GUI.Label(new Rect(250, Screen.height / 2 - 125, 150, 25), "Highscore", titleStyle);
+        GUI.Label(new Rect((Screen.width / 2) - 75, Screen.height / 2 - 125, 150, 25), "Highscore", titleStyle);
     
-        GUI.Label(new Rect(260, Screen.height / 2 - 80, 150, 25), "• Platz 1:" + "\n      " + PlayerPrefs.GetInt("HS1"), labelStyle);
+        GUI.Label(new Rect((Screen.width / 2) - 75, Screen.height / 2 - 80, 150, 25), "• Platz 1: " +  PlayerPrefs.GetInt("HS1"), labelStyle);
 
-        GUI.Label(new Rect(260, Screen.height / 2 - 35, 150, 25), "• Platz 2:" + "\n      " + PlayerPrefs.GetInt("HS2"), labelStyle);
+        GUI.Label(new Rect((Screen.width / 2) - 75, Screen.height / 2 - 35, 150, 25), "• Platz 2: " +  PlayerPrefs.GetInt("HS2"), labelStyle);
 
-        GUI.Label(new Rect(260, Screen.height / 2 + 10, 150, 25), "• Platz 3:" + "\n      " + PlayerPrefs.GetInt("HS3"), labelStyle);
+        GUI.Label(new Rect((Screen.width / 2) - 75, Screen.height / 2 + 10, 150, 25), "• Platz 3: " +  PlayerPrefs.GetInt("HS3"), labelStyle);
 
 
         GUI.color = Color.white;
 
-        if (GUI.Button(new Rect(500, Screen.height / 2 + 60, 150, 25), "Reset"))
+        if (GUI.Button(new Rect(Screen.width - 155, Screen.height / 2 + 60, 150, 25), "Reset"))
         {
             resetHighscore();
         }
-        if (GUI.Button(new Rect(500, Screen.height / 2 + 100, 150, 25), "Menü"))
+        if (GUI.Button(new Rect(Screen.width - 155, Screen.height / 2 + 100, 150, 25), "Menü"))
         {
             Application.LoadLevel("MainMenu");
         }

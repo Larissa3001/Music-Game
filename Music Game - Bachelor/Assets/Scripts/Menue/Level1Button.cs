@@ -3,9 +3,10 @@ using System.Collections;
 
 public class Level1Button : MonoBehaviour {
 
+
 	// Use this for initialization
 	void Start () {
-	
+
 	}
 	
 	// Update is called once per frame
@@ -13,11 +14,9 @@ public class Level1Button : MonoBehaviour {
 	
 	}
 
-    void OnMouseOver()
+    public static void LevelButton()
     {
 
-        if (Input.GetMouseButtonDown(0))
-        {
             if (Application.loadedLevelName == "Scene2")
             { 
             GlobalValues.globalClicksObj1 = 0;
@@ -28,6 +27,8 @@ public class Level1Button : MonoBehaviour {
 
             Application.LoadLevel("Scene1");
         }
+
+
             if (Application.loadedLevelName == "Scene1")
             {
                 GlobalValues.globalClicksObj1 = 0;
@@ -42,4 +43,4 @@ public class Level1Button : MonoBehaviour {
         }
 
     }
-}
+

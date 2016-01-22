@@ -3,8 +3,11 @@ using System.Collections;
 
 public class Scene1FMGUI : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+    public Texture tex1;
+    public Texture tex2;
+
+    // Use this for initialization
+    void Start () {
 	
 	}
 	
@@ -25,7 +28,20 @@ public class Scene1FMGUI : MonoBehaviour {
     void OnGUI()
     {
 
-            GUI.color = Color.white;
+
+            if (GUI.Button(new Rect((Screen.width - 45), Screen.height / 2 - 175, 30, 30), tex2, "label"))
+            {
+                Level1Button.LevelButton();
+
+            }
+
+            if (GUI.Button(new Rect((Screen.width - 45), Screen.height / 2 - 150, 30, 30), tex1, "label"))
+            {
+                Level2Button.LevelButton();
+            }
+        
+
+        GUI.color = Color.white;
 
             if (GUI.Button(new Rect(Screen.width - 85, Screen.height / 2 + 60, 80, 25), "Neustart"))
             {

@@ -3,8 +3,11 @@ using System.Collections;
 
 public class Scene2FMGUI : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+    public Texture tex1;
+    public Texture tex2;
+
+    // Use this for initialization
+    void Start () {
 	
 	}
 	
@@ -24,6 +27,17 @@ public class Scene2FMGUI : MonoBehaviour {
 
     void OnGUI()
     {
+
+        if (GUI.Button(new Rect((Screen.width - 45), Screen.height / 2 - 175, 30, 30), tex1, "label"))
+        {
+            Level1Button.LevelButton();
+
+        }
+
+        if (GUI.Button(new Rect((Screen.width - 45), Screen.height / 2 - 150, 30, 30), tex2, "label"))
+        {
+            Level2Button.LevelButton();
+        }
 
         GUI.color = Color.white;
 

@@ -108,7 +108,7 @@ public class MusicGameGUI : MonoBehaviour {
         titleStyle.normal.textColor = Color.grey;
         titleStyle.fontSize = 15;
 
-        GUI.Label(new Rect(90, Screen.height / 2 - 185, 150, 25), "Finde die Zusammenstellung, die ein Stück aus dem Genre Jazz ergibt!", titleStyle);
+        GUI.Label(new Rect((Screen.width / 2) - 230, Screen.height - Screen.height + 25 , 115, 25), "Finde die Zusammenstellung, die ein Stück aus dem Genre Jazz ergibt!", titleStyle);
 
 
         GUI.color = Color.white;
@@ -139,22 +139,22 @@ public class MusicGameGUI : MonoBehaviour {
         if (wrong)
         {
             GUI.color = Color.white;
-            GUI.Box(new Rect(Screen.width - Screen.width + (Screen.width / 4) , Screen.height / 2 - 100, 300, 200), "");
+            GUI.Box(new Rect((Screen.width / 2) - 150 , Screen.height / 2 - 100, 300, 200), "");
 
-            GUI.Label(new Rect(Screen.width - Screen.width + (Screen.width / 4) + 55, Screen.height / 2 - 50, 250, 25), "Leider nicht die richtige Lösung!");
+            GUI.Label(new Rect((Screen.width / 2) - 95, Screen.height / 2 - 50, 190, 25), "Leider nicht die richtige Lösung!");
 
-            if ((GUI.Button(new Rect(Screen.width - Screen.width + (Screen.width / 4) + 60, Screen.height / 2 - 10, 80, 25), "Weiter?")))
+            if ((GUI.Button(new Rect((Screen.width / 2) + 5, Screen.height / 2 - 10, 80, 25), "Weiter?")))
             {
                 resetTask();
             }
 
-            if ((GUI.Button(new Rect(Screen.width - Screen.width + (Screen.width / 4) + 150, Screen.height / 2 - 10, 80, 25), "Menü!")))
+            if ((GUI.Button(new Rect((Screen.width / 2) - 85, Screen.height / 2 - 10, 80, 25), "Menü!")))
             {
                 resetValues();
                 Application.LoadLevel("MainMenu");
             }
 
-            if ((GUI.Button(new Rect(Screen.width - Screen.width + (Screen.width / 4) + 105, Screen.height / 2 + 30, 80, 25), "Neustart!")))
+            if ((GUI.Button(new Rect((Screen.width / 2) - 40, Screen.height / 2 + 30, 80, 25), "Neustart!")))
             {
                 resetValues();
                 Application.LoadLevel("MusicGame");
@@ -164,18 +164,18 @@ public class MusicGameGUI : MonoBehaviour {
         if (right)
         {
             GUI.color = Color.white;
-            GUI.Box(new Rect(155, Screen.height / 2 - 100, 300, 200), "");
+            GUI.Box(new Rect((Screen.width / 2) - 150, Screen.height / 2 - 100, 300, 200), "");
 
-            GUI.Label(new Rect(185, Screen.height / 2 - 50, 250, 25), "Glückwunsch dies ist die richtige Lösung!");
+            GUI.Label(new Rect((Screen.width / 2) - 120, Screen.height / 2 - 50, 250, 25), "Glückwunsch dies ist die richtige Lösung!");
 
-            if ((GUI.Button(new Rect(220, Screen.height / 2 - 10, 80, 25), "Nochmal?")))
+            if ((GUI.Button(new Rect((Screen.width / 2) + 5, Screen.height / 2 - 10, 80, 25), "Nochmal?")))
             {
                 resetTask();
                 resetValues();
                 Application.LoadLevel("MusicMode");
             }
 
-            if ((GUI.Button(new Rect(310, Screen.height / 2 - 10, 80, 25), "Menü!")))
+            if ((GUI.Button(new Rect((Screen.width / 2) - 85, Screen.height / 2 - 10, 80, 25), "Menü!")))
             {
                 resetValues();
                 Application.LoadLevel("MainMenu");

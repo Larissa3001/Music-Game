@@ -61,8 +61,8 @@ public class FMVersion1Obj1Behaviour : MonoBehaviour
     void Update()
     {
 
-        Debug.Log("tempo " + tempo);
-        Debug.Log("art " + art);
+        //Debug.Log("tempo " + tempo);
+        //Debug.Log("art " + art);
 
         clicks = GlobalValues.clicksObj1;
         //Debug.Log("clicks: " +clicks);

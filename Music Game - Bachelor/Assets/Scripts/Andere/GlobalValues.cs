@@ -40,9 +40,14 @@ public class GlobalValues : MonoBehaviour {
 
     public static int combo;
 
+    public static bool save;
+
+
 
     // Use this for initialization
     void Start () {
+
+        save = false;
 
         //Debug.Log(lifes);
 

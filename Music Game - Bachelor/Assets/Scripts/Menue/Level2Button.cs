@@ -14,10 +14,7 @@ public class Level2Button : MonoBehaviour {
 
 	}
 
-    void OnMouseOver(){
-
-        if (Input.GetMouseButtonDown(0))
-        {
+    public static void LevelButton() { 
             if (Application.loadedLevelName == "Scene1")
             {
 
@@ -44,4 +41,4 @@ public class Level2Button : MonoBehaviour {
         }
 
     }
-}
+

@@ -54,7 +54,8 @@
      <Compile Include="Assets\Scripts\Andere\ObjectMovement2.cs" />
      <Compile Include="Assets\Scripts\Andere\ObjectSpeed.cs" />
      <Compile Include="Assets\Scripts\AudioLoad.cs" />
-     <Compile Include="Assets\Scripts\AudioSave.cs" />
+     <Compile Include="Assets\Scripts\AudioSave1.cs" />
+     <Compile Include="Assets\Scripts\AudioSave2.cs" />
      <Compile Include="Assets\Scripts\Clicks\Object1Clicks.cs" />
      <Compile Include="Assets\Scripts\Clicks\Object2Clicks.cs" />
      <Compile Include="Assets\Scripts\Clicks\Object3Clicks.cs" />
@@ -77,6 +78,11 @@
      <Compile Include="Assets\Scripts\Menue\MainMenu.cs" />
      <Compile Include="Assets\Scripts\Menue\ModeMenu.cs" />
      <Compile Include="Assets\Scripts\MusicGameGUI.cs" />
+     <Compile Include="Assets\Scripts\Object1Test.cs" />
+     <Compile Include="Assets\Scripts\Object2Test.cs" />
+     <Compile Include="Assets\Scripts\Object3Test.cs" />
+     <Compile Include="Assets\Scripts\Object4Test.cs" />
+     <Compile Include="Assets\Scripts\Object5Test.cs" />
      <Compile Include="Assets\Scripts\Scene1FMGUI.cs" />
      <Compile Include="Assets\Scripts\Scene2FMGUI.cs" />
      <Compile Include="Assets\Scripts\Spawnen\SpawnObject1.cs" />

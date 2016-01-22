@@ -3,6 +3,7 @@ using System.Collections;
 
 public class GameModeBehaviour : MonoBehaviour {
 
+
     int Lifes = GlobalValues.lifes;
     int Combo = GlobalValues.combo;
 
