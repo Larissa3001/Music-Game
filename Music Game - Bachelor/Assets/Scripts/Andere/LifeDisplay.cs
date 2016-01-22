@@ -15,13 +15,21 @@ public class LifeDisplay : MonoBehaviour {
     SpriteRenderer r4;
     SpriteRenderer r5;
 
+    string eins;
+    string zwei;
+    string drei;
+    string vier;
+    string fünf;
 
     public static int Lifes = GlobalValues.lifes;
     public static bool end;
 
+    bool start;
+
 	// Use this for initialization
 	void Start () {
 
+        start = false;
         end = false;
 
         r1 = L1.GetComponent<SpriteRenderer>();
@@ -30,11 +38,21 @@ public class LifeDisplay : MonoBehaviour {
         r4 = L4.GetComponent<SpriteRenderer>();
         r5 = L5.GetComponent<SpriteRenderer>();
 
+        
 
-	}
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
+
+        
+            eins = GlobalValues.GMaS1;
+            zwei = GlobalValues.GMaS2;
+            drei = GlobalValues.GMaS3;
+            vier = GlobalValues.GMaS4;
+            fünf = GlobalValues.GMaS5;
+    
 
         Lifes = GlobalValues.lifes;
 
@@ -94,11 +112,11 @@ public class LifeDisplay : MonoBehaviour {
     {
          if(Lifes >= 5){
 
-            AudioMute.Play("Eins");
-            AudioMute.Play("Zwei");
-            AudioMute.Play("Drei");
-            AudioMute.Play("Vier");
-            AudioMute.Play("Fünf");
+            AudioMute.Play(eins);
+            AudioMute.Play(zwei);
+            AudioMute.Play(drei);
+            AudioMute.Play(vier);
+            AudioMute.Play(fünf);
 
             r1.enabled = true;
             r2.enabled = true;
@@ -111,11 +129,11 @@ public class LifeDisplay : MonoBehaviour {
 
         if (Lifes == 4){
 
-            AudioMute.Play("Eins");
-            AudioMute.Play("Zwei");
-            AudioMute.Play("Drei");
-            AudioMute.Play("Vier");
-            AudioMute.Mute("Fünf");
+            AudioMute.Play(GlobalValues.GMaS1);
+            AudioMute.Play(GlobalValues.GMaS2);
+            AudioMute.Play(GlobalValues.GMaS3);
+            AudioMute.Play(GlobalValues.GMaS4);
+            AudioMute.Mute(GlobalValues.GMaS5);
 
             r1.enabled = true;
             r2.enabled = true;
@@ -126,11 +144,11 @@ public class LifeDisplay : MonoBehaviour {
 
         if (Lifes == 3){
 
-            AudioMute.Play("Eins");
-            AudioMute.Play("Zwei");
-            AudioMute.Play("Drei");
-            AudioMute.Mute("Vier");
-            AudioMute.Mute("Fünf");
+            AudioMute.Play(GlobalValues.GMaS1);
+            AudioMute.Play(GlobalValues.GMaS2);
+            AudioMute.Play(GlobalValues.GMaS3);
+            AudioMute.Mute(GlobalValues.GMaS4);
+            AudioMute.Mute(GlobalValues.GMaS5);
 
             r1.enabled = true;
             r2.enabled = true;
@@ -141,11 +159,11 @@ public class LifeDisplay : MonoBehaviour {
 
         if (Lifes == 2){
 
-            AudioMute.Play("Eins");
-            AudioMute.Play("Zwei");
-            AudioMute.Mute("Drei");
-            AudioMute.Mute("Vier");
-            AudioMute.Mute("Fünf");
+            AudioMute.Play(GlobalValues.GMaS1);
+            AudioMute.Play(GlobalValues.GMaS2);
+            AudioMute.Mute(GlobalValues.GMaS3);
+            AudioMute.Mute(GlobalValues.GMaS4);
+            AudioMute.Mute(GlobalValues.GMaS5);
 
             r1.enabled = true;
             r2.enabled = true;
@@ -156,11 +174,11 @@ public class LifeDisplay : MonoBehaviour {
 
         if (Lifes == 1){
 
-            AudioMute.Play("Eins");
-            AudioMute.Mute("Zwei");
-            AudioMute.Mute("Drei");
-            AudioMute.Mute("Vier");
-            AudioMute.Mute("Fünf");
+            AudioMute.Play(GlobalValues.GMaS1);
+            AudioMute.Mute(GlobalValues.GMaS2);
+            AudioMute.Mute(GlobalValues.GMaS3);
+            AudioMute.Mute(GlobalValues.GMaS4);
+            AudioMute.Mute(GlobalValues.GMaS5);
 
             r1.enabled = true;
             r2.enabled = false;
@@ -171,11 +189,11 @@ public class LifeDisplay : MonoBehaviour {
 
         if (Lifes <= 0)
         {
-            AudioMute.Mute("Eins");
-            AudioMute.Mute("Zwei");
-            AudioMute.Mute("Drei");
-            AudioMute.Mute("Vier");
-            AudioMute.Mute("Fünf");
+            AudioMute.Mute(GlobalValues.GMaS1);
+            AudioMute.Mute(GlobalValues.GMaS2);
+            AudioMute.Mute(GlobalValues.GMaS3);
+            AudioMute.Mute(GlobalValues.GMaS4);
+            AudioMute.Mute(GlobalValues.GMaS5);
 
             r1.enabled = false;
             r2.enabled = false;

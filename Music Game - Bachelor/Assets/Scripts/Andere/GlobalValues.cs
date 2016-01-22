@@ -42,14 +42,20 @@ public class GlobalValues : MonoBehaviour {
 
     public static bool save;
 
+    public static int mode;
 
+    public static string GMaS1;
+    public static string GMaS2;
+    public static string GMaS3;
+    public static string GMaS4;
+    public static string GMaS5;
 
     // Use this for initialization
     void Start () {
 
         save = false;
 
-        //Debug.Log(lifes);
+        Debug.Log(GMaS1 + " " + GMaS2 + " " + GMaS3 + " "+ GMaS4 + " "+ GMaS5);
 
         AdjustLifes();
         AdjustClicks();

@@ -22,7 +22,7 @@ public class ObjectSpeed : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        Debug.Log(firstSpeedUp);
+        //Debug.Log(firstSpeedUp);
 
 
         timeUntilSpeedUp -= Time.deltaTime;

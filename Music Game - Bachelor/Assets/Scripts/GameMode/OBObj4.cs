@@ -38,7 +38,7 @@ public class OBObj4 : MonoBehaviour
     void Update()
     {
 
-        Debug.Log(clickable);
+        //Debug.Log(clickable);
     }
 
     void OnMouseDown()

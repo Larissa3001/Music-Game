@@ -32,6 +32,7 @@ public class FMVersion2Obj5Behaviour : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        
         //obj.SetActive(false);
 
         tempo = 0;

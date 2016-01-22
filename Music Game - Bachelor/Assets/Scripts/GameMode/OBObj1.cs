@@ -37,7 +37,7 @@ public class OBObj1 : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        Debug.Log(clickable);
+       // Debug.Log(clickable);
     }
 
     void OnMouseDown()

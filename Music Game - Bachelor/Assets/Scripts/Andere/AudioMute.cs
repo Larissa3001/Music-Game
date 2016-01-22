@@ -20,7 +20,7 @@ public class AudioMute : MonoBehaviour {
     public static void Mute(string tag)
     {
 
-        obj = GameObject.FindGameObjectWithTag(tag);
+        obj = GameObject.Find(tag);
 
         audio = obj.GetComponent<AudioSource>();
 
@@ -30,7 +30,12 @@ public class AudioMute : MonoBehaviour {
 
     public static void Play(string tag) {
 
-        obj = GameObject.FindGameObjectWithTag(tag);
+        Debug.Log(tag);
+
+
+        obj = GameObject.Find(tag);
+
+        Debug.Log(obj.name);
 
         audio = obj.GetComponent<AudioSource>();
 

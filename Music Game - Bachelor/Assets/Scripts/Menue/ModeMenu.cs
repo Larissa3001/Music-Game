@@ -34,7 +34,7 @@ public class ModeMenu : MonoBehaviour {
 
         if (GUI.Button(new Rect((Screen.width / 2) - 75, Screen.height / 2 - 30, 150, 25), "Game Mode"))
         {
-            Application.LoadLevel("GameMode");
+            Application.LoadLevel("GameModeMusic");
         }
 
         if (GUI.Button(new Rect((Screen.width / 2) - 75, Screen.height / 2 + 65, 150, 25), "Back to Menu"))
