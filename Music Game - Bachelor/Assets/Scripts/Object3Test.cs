@@ -47,35 +47,35 @@ public class Object3Test : MonoBehaviour {
         {
             saveObj = o11;
         }
-        if (o12.GetComponent<AudioSource>().mute == false)
+        else if (o12.GetComponent<AudioSource>().mute == false)
         {
             saveObj = o12;
         }
-        if (o13.GetComponent<AudioSource>().mute == false)
+        else if (o13.GetComponent<AudioSource>().mute == false)
         {
             saveObj = o13;
         }
-        if (o14.GetComponent<AudioSource>().mute == false)
+        else if (o14.GetComponent<AudioSource>().mute == false)
         {
             saveObj = o14;
         }
-        if (o15.GetComponent<AudioSource>().mute == false)
+        else if (o15.GetComponent<AudioSource>().mute == false)
         {
             saveObj = o15;
         }
-        if (o16.GetComponent<AudioSource>().mute == false)
+        else if (o16.GetComponent<AudioSource>().mute == false)
         {
             saveObj = o16;
         }
-        if (o17.GetComponent<AudioSource>().mute == false)
+        else if (o17.GetComponent<AudioSource>().mute == false)
         {
             saveObj = o17;
         }
-        if (o18.GetComponent<AudioSource>().mute == false)
+        else if (o18.GetComponent<AudioSource>().mute == false)
         {
             saveObj = o18;
         }
-        if (o19.GetComponent<AudioSource>().mute == false)
+        else if (o19.GetComponent<AudioSource>().mute == false)
         {
             saveObj = o19;
         }
@@ -83,41 +83,45 @@ public class Object3Test : MonoBehaviour {
 
 
 
-        if (o21.GetComponent<AudioSource>().mute == false)
+        else if (o21.GetComponent<AudioSource>().mute == false)
         {
             saveObj = o21;
         }
-        if (o22.GetComponent<AudioSource>().mute == false)
+        else if (o22.GetComponent<AudioSource>().mute == false)
         {
             saveObj = o22;
         }
-        if (o23.GetComponent<AudioSource>().mute == false)
+        else if (o23.GetComponent<AudioSource>().mute == false)
         {
             saveObj = o23;
         }
-        if (o24.GetComponent<AudioSource>().mute == false)
+        else if (o24.GetComponent<AudioSource>().mute == false)
         {
             saveObj = o24;
         }
-        if (o25.GetComponent<AudioSource>().mute == false)
+        else if (o25.GetComponent<AudioSource>().mute == false)
         {
             saveObj = o25;
         }
-        if (o26.GetComponent<AudioSource>().mute == false)
+        else if (o26.GetComponent<AudioSource>().mute == false)
         {
             saveObj = o26;
         }
-        if (o27.GetComponent<AudioSource>().mute == false)
+        else if(o27.GetComponent<AudioSource>().mute == false)
         {
             saveObj = o27;
         }
-        if (o28.GetComponent<AudioSource>().mute == false)
+        else if (o28.GetComponent<AudioSource>().mute == false)
         {
             saveObj = o28;
         }
-        if (o29.GetComponent<AudioSource>().mute == false)
+        else if (o29.GetComponent<AudioSource>().mute == false)
         {
             saveObj = o29;
+        }
+        else
+        {
+            saveObj = null;
         }
     }
 }

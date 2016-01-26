@@ -94,7 +94,7 @@ public class AudioLoad : MonoBehaviour {
 
             print(objn1);
 
-            if (objn1 != null)
+            if (objn1 != "")
             {
                 eins = Instantiate(Resources.Load(objn1, typeof(GameObject))) as GameObject;
                 eins.name = objn1;
@@ -106,14 +106,17 @@ public class AudioLoad : MonoBehaviour {
             }
             else
             {
-                eins = null;
+                eins = Instantiate(Resources.Load("Stille", typeof(GameObject))) as GameObject;
+                eins.name = "Stille";
+                eins.GetComponent<AudioSource>().mute = false;
+                GlobalValues.GMaS1 = eins.name;
             }
 
             string objn2 = PlayerPrefs.GetString("Save1Song2");
             float vol2 = PlayerPrefs.GetFloat("Save1Song2Vol");
 
             print(objn2);
-            if (objn2 != null)
+            if (objn2 != "")
             {
                 zwei = Instantiate(Resources.Load(objn2, typeof(GameObject))) as GameObject;
                 zwei.name = objn2;
@@ -123,13 +126,16 @@ public class AudioLoad : MonoBehaviour {
             }
             else
             {
-                zwei = null;
+                zwei = Instantiate(Resources.Load("Stille", typeof(GameObject))) as GameObject;
+                zwei.name = "Stille";
+                zwei.GetComponent<AudioSource>().mute = false;
+                GlobalValues.GMaS2 = zwei.name;
             }
 
             string objn3 = PlayerPrefs.GetString("Save1Song3");
             float vol3 = PlayerPrefs.GetFloat("Save1Song3Vol");
             print(objn3);
-            if (objn3 != null)
+            if (objn3 != "")
             {
                 drei = Instantiate(Resources.Load(objn3, typeof(GameObject))) as GameObject;
                 drei.name = objn3;
@@ -139,13 +145,17 @@ public class AudioLoad : MonoBehaviour {
             }
             else
             {
-                drei = null;
+                drei = Instantiate(Resources.Load("Stille", typeof(GameObject))) as GameObject;
+                drei.name = "Stille";
+                drei.GetComponent<AudioSource>().mute = false;
+                GlobalValues.GMaS3 = drei.name;
             }
 
             string objn4 = PlayerPrefs.GetString("Save1Song4");
             float vol4 = PlayerPrefs.GetFloat("Save1Song4Vol");
             print(objn4);
-            if (objn4 != null)
+
+            if (objn4 != "")
             {
                 vier = Instantiate(Resources.Load(objn4, typeof(GameObject))) as GameObject;
                 vier.name = objn4;
@@ -155,13 +165,17 @@ public class AudioLoad : MonoBehaviour {
             }
             else
             {
-                vier = null;
+                vier = Instantiate(Resources.Load("Stille", typeof(GameObject))) as GameObject;
+                vier.name = "Stille";
+                vier.GetComponent<AudioSource>().mute = false;
+                GlobalValues.GMaS4 = vier.name;
             }
 
             string objn5 = PlayerPrefs.GetString("Save1Song5");
             float vol5 = PlayerPrefs.GetFloat("Save1Song5Vol");
             print(objn5);
-            if (objn5 != null)
+
+            if (objn5 != "")
             {
                 fünf = Instantiate(Resources.Load(objn5, typeof(GameObject))) as GameObject;
                 fünf.name = objn5;
@@ -171,7 +185,10 @@ public class AudioLoad : MonoBehaviour {
             }
             else
             {
-                fünf = null;
+                fünf = Instantiate(Resources.Load("Stille", typeof(GameObject))) as GameObject;
+                fünf.name = "Stille";
+                fünf.GetComponent<AudioSource>().mute = false;
+                GlobalValues.GMaS5 = fünf.name;
             }
         }
         start = true;

@@ -34,9 +34,9 @@ public class MMVersion2Obj5Behaviour : MonoBehaviour
         tempo = 0;
         art = 0;
 
-        state1 = GameObject.Find("GTlangsamP5");
-        state2 = GameObject.Find("HochatempoP5");
-        state3 = GameObject.Find("HochlangsamP5");
+        state1 = GameObject.Find("GTlangsamJ5");
+        state2 = GameObject.Find("HochatempoJ5");
+        state3 = GameObject.Find("HochlangsamJ5");
 
         audio = GetComponent<AudioSource>();
         sprite = GetComponent<SpriteRenderer>();

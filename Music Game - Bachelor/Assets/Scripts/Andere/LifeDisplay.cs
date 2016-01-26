@@ -3,17 +3,17 @@ using System.Collections;
 
 public class LifeDisplay : MonoBehaviour {
 
-    public GameObject L1;
-    public GameObject L2;
-    public GameObject L3;
-    public GameObject L4;
-    public GameObject L5;
+    //public GameObject L1;
+    //public GameObject L2;
+    // public GameObject L3;
+    // public GameObject L4;
+    //public GameObject L5;
 
-    SpriteRenderer r1;
-    SpriteRenderer r2;
-    SpriteRenderer r3;
-    SpriteRenderer r4;
-    SpriteRenderer r5;
+    //SpriteRenderer r1;
+    //SpriteRenderer r2;
+    // SpriteRenderer r3;
+    //SpriteRenderer r4;
+    //SpriteRenderer r5;
 
     string eins;
     string zwei;
@@ -26,19 +26,28 @@ public class LifeDisplay : MonoBehaviour {
 
     bool start;
 
+    public Texture note;
+
+    bool L1, L2, L3, L4, L5;
+
 	// Use this for initialization
 	void Start () {
 
         start = false;
         end = false;
 
-        r1 = L1.GetComponent<SpriteRenderer>();
-        r2 = L2.GetComponent<SpriteRenderer>();
-        r3 = L3.GetComponent<SpriteRenderer>();
-        r4 = L4.GetComponent<SpriteRenderer>();
-        r5 = L5.GetComponent<SpriteRenderer>();
+        /* r1 = L1.GetComponent<SpriteRenderer>();
+         r2 = L2.GetComponent<SpriteRenderer>();
+         r3 = L3.GetComponent<SpriteRenderer>();
+         r4 = L4.GetComponent<SpriteRenderer>();
+         r5 = L5.GetComponent<SpriteRenderer>();*/
 
-        
+        L1 = true;
+        L2 = true;
+        L3 = true;
+        L4 = true;
+        L5 = true;
+
 
 
     }
@@ -95,6 +104,34 @@ public class LifeDisplay : MonoBehaviour {
             
 
         }
+        if (L5 == true)
+        {
+            
+            GUI.Button(new Rect((Screen.width - 185), Screen.height / 64, 60, 60), note, "label");
+
+        }
+        if (L4 == true)
+        {
+           
+            GUI.Button(new Rect((Screen.width - 155), Screen.height / 64, 60, 60), note, "label");
+
+        }
+        if (L3 == true)
+        {
+            
+            GUI.Button(new Rect((Screen.width - 125), Screen.height / 64, 60, 60), note, "label");
+
+        }
+        if (L2 == true)
+        {
+            
+            GUI.Button(new Rect((Screen.width - 95),Screen.height /64 , 60, 60), note, "label");
+        }
+        if (L1 == true)
+        {
+            GUI.Button(new Rect((Screen.width - 65), Screen.height / 64, 60, 60), note, "label");
+        }
+
     }
 
     void resetGame()
@@ -118,13 +155,18 @@ public class LifeDisplay : MonoBehaviour {
             AudioMute.Play(vier);
             AudioMute.Play(fünf);
 
-            r1.enabled = true;
-            r2.enabled = true;
-            r3.enabled = true;
-            r4.enabled = true;
-            r5.enabled = true;
+            //r1.enabled = true;
+            //r2.enabled = true;
+            //r3.enabled = true;
+            //r4.enabled = true;
+            //r5.enabled = true;
 
             GlobalValues.lifes = 5;
+            L1 = true;
+            L2 = true;
+            L3 = true;
+            L4 = true;
+            L5 = true;
         }
 
         if (Lifes == 4){
@@ -135,11 +177,17 @@ public class LifeDisplay : MonoBehaviour {
             AudioMute.Play(GlobalValues.GMaS4);
             AudioMute.Mute(GlobalValues.GMaS5);
 
-            r1.enabled = true;
-            r2.enabled = true;
-            r3.enabled = true;
-            r4.enabled = true;
-            r5.enabled = false;
+            //r1.enabled = true;
+            //r2.enabled = true;
+            //r3.enabled = true;
+            //r4.enabled = true;
+            //r5.enabled = false;
+
+            L1 = true;
+            L2 = true;
+            L3 = true;
+            L4 = true;
+            L5 = false;
         }
 
         if (Lifes == 3){
@@ -150,11 +198,16 @@ public class LifeDisplay : MonoBehaviour {
             AudioMute.Mute(GlobalValues.GMaS4);
             AudioMute.Mute(GlobalValues.GMaS5);
 
-            r1.enabled = true;
-            r2.enabled = true;
-            r3.enabled = true;
-            r4.enabled = false;
-            r5.enabled = false;
+            //r1.enabled = true;
+            //r2.enabled = true;
+            //r3.enabled = true;
+            //r4.enabled = false;
+            //r5.enabled = false;
+            L1 = true;
+            L2 = true;
+            L3 = true;
+            L4 = false;
+            L5 = false;
         }
 
         if (Lifes == 2){
@@ -165,11 +218,17 @@ public class LifeDisplay : MonoBehaviour {
             AudioMute.Mute(GlobalValues.GMaS4);
             AudioMute.Mute(GlobalValues.GMaS5);
 
-            r1.enabled = true;
-            r2.enabled = true;
-            r3.enabled = false;
-            r4.enabled = false;
-            r5.enabled = false;
+            //r1.enabled = true;
+            //r2.enabled = true;
+            //r3.enabled = false;
+            // r4.enabled = false;
+            // r5.enabled = false;
+
+            L1 = true;
+            L2 = true;
+            L3 = false;
+            L4 = false;
+            L5 = false;
         }
 
         if (Lifes == 1){
@@ -180,11 +239,17 @@ public class LifeDisplay : MonoBehaviour {
             AudioMute.Mute(GlobalValues.GMaS4);
             AudioMute.Mute(GlobalValues.GMaS5);
 
-            r1.enabled = true;
-            r2.enabled = false;
-            r3.enabled = false;
-            r4.enabled = false;
-            r5.enabled = false;
+            //r1.enabled = true;
+            // r2.enabled = false;
+            //r3.enabled = false;
+            //r4.enabled = false;
+            //r5.enabled = false;
+
+            L1 = true;
+            L2 = false;
+            L3 = false;
+            L4 = false;
+            L5 = false;
         }
 
         if (Lifes <= 0)
@@ -195,13 +260,19 @@ public class LifeDisplay : MonoBehaviour {
             AudioMute.Mute(GlobalValues.GMaS4);
             AudioMute.Mute(GlobalValues.GMaS5);
 
-            r1.enabled = false;
-            r2.enabled = false;
-            r3.enabled = false;
-            r4.enabled = false;
-            r5.enabled = false;
+            // r1.enabled = false;
+            //r2.enabled = false;
+            // r3.enabled = false;
+            // r4.enabled = false;
+            // r5.enabled = false;
 
             //Ende
+
+            L1 = false;
+            L2 = false;
+            L3 = false;
+            L4 = false;
+            L5 = false;
 
             end = true;
             Time.timeScale = 0;

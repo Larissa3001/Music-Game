@@ -29,13 +29,13 @@ public class Scene1FMGUI : MonoBehaviour {
     {
 
 
-            if (GUI.Button(new Rect((Screen.width - 45), Screen.height / 2 - 175, 30, 30), tex2, "label"))
+            if (GUI.Button(new Rect((Screen.width - 45), Screen.height / 64, 40, 40), tex2, "label"))
             {
                 Level1Button.LevelButton();
 
             }
 
-            if (GUI.Button(new Rect((Screen.width - 45), Screen.height / 2 - 150, 30, 30), tex1, "label"))
+            if (GUI.Button(new Rect((Screen.width - 45), Screen.height / 10, 40, 40), tex1, "label"))
             {
                 Level2Button.LevelButton();
             }

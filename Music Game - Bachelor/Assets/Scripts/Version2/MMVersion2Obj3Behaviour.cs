@@ -34,9 +34,9 @@ public class MMVersion2Obj3Behaviour : MonoBehaviour
         tempo = 0;
         art = 0;
 
-        state1 = GameObject.Find("GTlangsamP3");
-        state2 = GameObject.Find("TiefatempoP3");
-        state3 = GameObject.Find("TieflangsamP3");
+        state1 = GameObject.Find("GTlangsamJ3");
+        state2 = GameObject.Find("TiefatempoJ3");
+        state3 = GameObject.Find("TieflangsamJ3");
 
         audio = GetComponent<AudioSource>();
         sprite = GetComponent<SpriteRenderer>();
