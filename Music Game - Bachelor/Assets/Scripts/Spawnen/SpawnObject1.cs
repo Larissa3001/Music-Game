@@ -19,7 +19,6 @@ public class SpawnObject1 : MonoBehaviour
     void Start()
     {
         SpawnObjects();
-        // Snow.transform.position = new Vector3(sVec.x,sVec.y,sVec.z);
 
     }
 

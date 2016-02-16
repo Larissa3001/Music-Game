@@ -9,7 +9,7 @@ public class FM2Version1Obj3Behaviour : MonoBehaviour
     int clicks = 0;
 
     int tempo;
-    int art;
+    int mode;
 
     SpriteRenderer sprite;
     Collider2D col;
@@ -35,7 +35,7 @@ public class FM2Version1Obj3Behaviour : MonoBehaviour
         //obj.SetActive(false);
 
         tempo = 0;
-        art = 0;
+        mode = 0;
 
         state1 = GameObject.Find("2GTlangsamJ3");
         state2 = GameObject.Find("2GTschnellJ3");
@@ -94,6 +94,7 @@ public class FM2Version1Obj3Behaviour : MonoBehaviour
         {
             MusicMute();
             sprite.enabled = false;
+            col.enabled = false;
             activ = false;
 
         }
@@ -117,7 +118,7 @@ public class FM2Version1Obj3Behaviour : MonoBehaviour
     {
         AudioSource music;
 
-        if (tempo == 0 && art == 0)
+        if (tempo == 0 && mode == 0)
         {
             music = this.GetComponent<AudioSource>();
             state1.GetComponent<AudioSource>().mute = true;
@@ -131,7 +132,7 @@ public class FM2Version1Obj3Behaviour : MonoBehaviour
             music.mute = false;
             aud = music;
         }
-        if (tempo == 1 && art == 0)
+        if (tempo == 1 && mode == 0)
         {
             this.GetComponent<AudioSource>().mute = true;
             music = state1.GetComponent<AudioSource>();
@@ -145,7 +146,7 @@ public class FM2Version1Obj3Behaviour : MonoBehaviour
             music.mute = false;
             aud = music;
         }
-        if (tempo == 2 && art == 0)
+        if (tempo == 2 && mode == 0)
         {
             this.GetComponent<AudioSource>().mute = true;
             state1.GetComponent<AudioSource>().mute = true;
@@ -159,7 +160,7 @@ public class FM2Version1Obj3Behaviour : MonoBehaviour
             music.mute = false;
             aud = music;
         }
-        if (tempo == 0 && art == 1)
+        if (tempo == 0 && mode == 1)
         {
             this.GetComponent<AudioSource>().mute = true;
             state1.GetComponent<AudioSource>().mute = true;
@@ -173,7 +174,7 @@ public class FM2Version1Obj3Behaviour : MonoBehaviour
             music.mute = false;
             aud = music;
         }
-        if (tempo == 0 && art == 2)
+        if (tempo == 0 && mode == 2)
         {
             this.GetComponent<AudioSource>().mute = true;
             state1.GetComponent<AudioSource>().mute = true;
@@ -187,7 +188,7 @@ public class FM2Version1Obj3Behaviour : MonoBehaviour
             music.mute = false;
             aud = music;
         }
-        if (tempo == 1 && art == 1)
+        if (tempo == 1 && mode == 1)
         {
             this.GetComponent<AudioSource>().mute = true;
             state1.GetComponent<AudioSource>().mute = true;
@@ -201,7 +202,7 @@ public class FM2Version1Obj3Behaviour : MonoBehaviour
             music.mute = false;
             aud = music;
         }
-        if (tempo == 2 && art == 1)
+        if (tempo == 2 && mode == 1)
         {
             this.GetComponent<AudioSource>().mute = true;
             state1.GetComponent<AudioSource>().mute = true;
@@ -215,7 +216,7 @@ public class FM2Version1Obj3Behaviour : MonoBehaviour
             music.mute = false;
             aud = music;
         }
-        if (tempo == 1 && art == 2)
+        if (tempo == 1 && mode == 2)
         {
             this.GetComponent<AudioSource>().mute = true;
             state1.GetComponent<AudioSource>().mute = true;
@@ -229,7 +230,7 @@ public class FM2Version1Obj3Behaviour : MonoBehaviour
             music.mute = false;
             aud = music;
         }
-        if (tempo == 2 && art == 2)
+        if (tempo == 2 && mode == 2)
         {
             this.GetComponent<AudioSource>().mute = true;
             state1.GetComponent<AudioSource>().mute = true;
@@ -264,10 +265,10 @@ public class FM2Version1Obj3Behaviour : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(1))
         {
-            art += 1;
-            if (art == 3)
+            mode += 1;
+            if (mode == 3)
             {
-                art = 0;
+                mode = 0;
             }
         }
 

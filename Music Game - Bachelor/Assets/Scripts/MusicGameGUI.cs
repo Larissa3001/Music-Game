@@ -26,9 +26,9 @@ public class MusicGameGUI : MonoBehaviour {
 
         obj1 = GameObject.Find("obj1version1");
         obj2 = GameObject.Find("obj2version1");
-        obj3 = GameObject.Find("obj3version1");
+        obj3 = GameObject.Find("obj3version2");
         obj4 = GameObject.Find("obj4version1");
-        obj5 = GameObject.Find("obj5version1");
+        obj5 = GameObject.Find("obj5version2");
 
         aud1 = obj1.GetComponent<AudioSource>();
         aud2 = obj2.GetComponent<AudioSource>();
@@ -56,7 +56,7 @@ public class MusicGameGUI : MonoBehaviour {
             right = false;
             wrong = true;
         }
-
+        
 
     }
 
@@ -68,26 +68,26 @@ public class MusicGameGUI : MonoBehaviour {
         GlobalValues.globalClicksObj4 = 0;
         GlobalValues.globalClicksObj5 = 0;
 
-        MMVersion1Obj1Behaviour.art = 0;
+        MMVersion1Obj1Behaviour.mode = 0;
         MMVersion1Obj1Behaviour.tempo = 0;
-        MMVersion1Obj2Behaviour.art = 0;
+        MMVersion1Obj2Behaviour.mode = 0;
         MMVersion1Obj2Behaviour.tempo = 0;
-        MMVersion1Obj3Behaviour.art = 0;
+        MMVersion1Obj3Behaviour.mode = 0;
         MMVersion1Obj3Behaviour.tempo = 0;
-        MMVersion1Obj4Behaviour.art = 0;
+        MMVersion1Obj4Behaviour.mode = 0;
         MMVersion1Obj4Behaviour.tempo = 0;
-        MMVersion1Obj5Behaviour.art = 0;
+        MMVersion1Obj5Behaviour.mode = 0;
         MMVersion1Obj5Behaviour.tempo = 0;
 
-        MMVersion2Obj1Behaviour.art = 0;
+        MMVersion2Obj1Behaviour.mode = 0;
         MMVersion2Obj1Behaviour.tempo = 0;
-        MMVersion2Obj2Behaviour.art = 0;
+        MMVersion2Obj2Behaviour.mode = 0;
         MMVersion2Obj2Behaviour.tempo = 0;
-        MMVersion2Obj3Behaviour.art = 0;
+        MMVersion2Obj3Behaviour.mode = 0;
         MMVersion2Obj3Behaviour.tempo = 0;
-        MMVersion2Obj4Behaviour.art = 0;
+        MMVersion2Obj4Behaviour.mode = 0;
         MMVersion2Obj4Behaviour.tempo = 0;
-        MMVersion2Obj5Behaviour.art = 0;
+        MMVersion2Obj5Behaviour.mode = 0;
         MMVersion2Obj5Behaviour.tempo = 0;
 
        

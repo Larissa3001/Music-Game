@@ -9,7 +9,7 @@ public class MMVersion1Obj5Behaviour : MonoBehaviour
     int clicks = 0;
 
     public static int tempo;
-    public static int art;
+    public static int mode;
 
     SpriteRenderer sprite;
     Collider2D col;
@@ -30,11 +30,11 @@ public class MMVersion1Obj5Behaviour : MonoBehaviour
         //obj.SetActive(false);
 
         tempo = 0;
-        art = 0;
+        mode = 0;
 
-        state1 = GameObject.Find("GTlangsamP5");
-        state2 = GameObject.Find("HochatempoP5");
-        state3 = GameObject.Find("HochlangsamP5");
+        state1 = GameObject.Find("GTlangsamJ5");
+        state2 = GameObject.Find("HochatempoJ5");
+        state3 = GameObject.Find("HochlangsamJ5");
 
         audio = GetComponent<AudioSource>();
         sprite = GetComponent<SpriteRenderer>();
@@ -50,7 +50,7 @@ public class MMVersion1Obj5Behaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        MusicMute();
         clicks = GlobalValues.clicksObj5;
         //Debug.Log("clicks: " +clicks);
 
@@ -82,6 +82,7 @@ public class MMVersion1Obj5Behaviour : MonoBehaviour
         {
             MusicMute();
             sprite.enabled = false;
+            col.enabled = false;
             activ = false;
 
         }
@@ -105,7 +106,7 @@ public class MMVersion1Obj5Behaviour : MonoBehaviour
     {
         AudioSource music;
 
-        if (tempo == 0 && art == 0)
+        if (tempo == 0 && mode == 0)
         {
             music = this.GetComponent<AudioSource>();
             state1.GetComponent<AudioSource>().mute = true;
@@ -114,7 +115,7 @@ public class MMVersion1Obj5Behaviour : MonoBehaviour
             music.mute = false;
             aud = music;
         }
-        if (tempo == 1 && art == 0)
+        if (tempo == 1 && mode == 0)
         {
             this.GetComponent<AudioSource>().mute = true;
             music = state1.GetComponent<AudioSource>();
@@ -123,7 +124,7 @@ public class MMVersion1Obj5Behaviour : MonoBehaviour
             music.mute = false;
             aud = music;
         }
-        if (tempo == 0 && art == 1)
+        if (tempo == 0 && mode == 1)
         {
             this.GetComponent<AudioSource>().mute = true;
             state1.GetComponent<AudioSource>().mute = true;
@@ -132,7 +133,7 @@ public class MMVersion1Obj5Behaviour : MonoBehaviour
             music.mute = false;
             aud = music;
         }
-        if (tempo == 1 && art == 1)
+        if (tempo == 1 && mode == 1)
         {
             this.GetComponent<AudioSource>().mute = true;
             state1.GetComponent<AudioSource>().mute = true;
@@ -156,10 +157,10 @@ public class MMVersion1Obj5Behaviour : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(1))
         {
-            art += 1;
-            if (art == 2)
+            mode += 1;
+            if (mode == 2)
             {
-                art = 0;
+                mode = 0;
             }
         }
 
