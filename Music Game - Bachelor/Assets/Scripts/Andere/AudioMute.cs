@@ -17,10 +17,10 @@ public class AudioMute : MonoBehaviour {
 	
 	}
 
-    public static void Mute(string tag)
+    public static void Mute(string name)
     {
 
-        obj = GameObject.Find(tag);
+        obj = GameObject.Find(name);
 
         audio = obj.GetComponent<AudioSource>();
 
@@ -28,12 +28,12 @@ public class AudioMute : MonoBehaviour {
 
     }
 
-    public static void Play(string tag) {
+    public static void Play(string name) {
 
-        Debug.Log(tag);
+        Debug.Log(name);
 
 
-        obj = GameObject.Find(tag);
+        obj = GameObject.Find(name);
 
         Debug.Log(obj.name);
 

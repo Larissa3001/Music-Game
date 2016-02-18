@@ -129,9 +129,10 @@ public class OBObj3 : MonoBehaviour
 
         if (zone2 == true && zone1 == false)
         {
-            GlobalValues.score += 50;
+            GlobalValues.score += 100;
+            GlobalValues.combo += 1;
             //GlobalValues.combo += 1;
-            //Debug.Log("Zone2obj3 getroffen");
+            //Debug.Log("Zone2obj1 getroffen");
 
             ChangeSprite.ClickedRight(currentObj);
 
@@ -140,9 +141,8 @@ public class OBObj3 : MonoBehaviour
 
         if (zone2 == true && zone1 == true)
         {
-            GlobalValues.score += 100;
-            GlobalValues.combo += 1;
-            //Debug.Log("Zone1/2obj3 getroffen");
+            GlobalValues.score += 50;
+            //Debug.Log("Zone1/2obj1 getroffen");
 
             ChangeSprite.ClickedRight(currentObj);
 

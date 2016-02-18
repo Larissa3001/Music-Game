@@ -17,8 +17,8 @@ public class Highscore : MonoBehaviour {
 
     public static void saveHighscore(int score)
     {
-        bool h1 = true;
-        bool h2 = true;
+        //bool h1 = true;
+        //bool h2 = true;
 
         PlayerPrefs.SetInt("Score",score);
 
@@ -33,7 +33,7 @@ public class Highscore : MonoBehaviour {
             PlayerPrefs.SetInt("HS2", one);
             PlayerPrefs.SetInt("HS1", score);
 
-            h1 = true;
+           // h1 = true;
         }
 
         if (score < one && score > two)

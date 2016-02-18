@@ -171,11 +171,11 @@ public class LifeDisplay : MonoBehaviour {
 
         if (Lifes == 4){
 
-            AudioMute.Play(GlobalValues.GMaS1);
-            AudioMute.Play(GlobalValues.GMaS2);
-            AudioMute.Play(GlobalValues.GMaS3);
-            AudioMute.Play(GlobalValues.GMaS4);
-            AudioMute.Mute(GlobalValues.GMaS5);
+            AudioMute.Play(eins);
+            AudioMute.Play(zwei);
+            AudioMute.Play(drei);
+            AudioMute.Play(vier);
+            AudioMute.Mute(fünf);
 
             //r1.enabled = true;
             //r2.enabled = true;
@@ -192,11 +192,11 @@ public class LifeDisplay : MonoBehaviour {
 
         if (Lifes == 3){
 
-            AudioMute.Play(GlobalValues.GMaS1);
-            AudioMute.Play(GlobalValues.GMaS2);
-            AudioMute.Play(GlobalValues.GMaS3);
-            AudioMute.Mute(GlobalValues.GMaS4);
-            AudioMute.Mute(GlobalValues.GMaS5);
+            AudioMute.Play(eins);
+            AudioMute.Play(zwei);
+            AudioMute.Play(drei);
+            AudioMute.Mute(vier);
+            AudioMute.Mute(fünf);
 
             //r1.enabled = true;
             //r2.enabled = true;
@@ -212,11 +212,11 @@ public class LifeDisplay : MonoBehaviour {
 
         if (Lifes == 2){
 
-            AudioMute.Play(GlobalValues.GMaS1);
-            AudioMute.Play(GlobalValues.GMaS2);
-            AudioMute.Mute(GlobalValues.GMaS3);
-            AudioMute.Mute(GlobalValues.GMaS4);
-            AudioMute.Mute(GlobalValues.GMaS5);
+            AudioMute.Play(eins);
+            AudioMute.Play(zwei);
+            AudioMute.Mute(drei);
+            AudioMute.Mute(vier);
+            AudioMute.Mute(fünf);
 
             //r1.enabled = true;
             //r2.enabled = true;
@@ -233,11 +233,11 @@ public class LifeDisplay : MonoBehaviour {
 
         if (Lifes == 1){
 
-            AudioMute.Play(GlobalValues.GMaS1);
-            AudioMute.Mute(GlobalValues.GMaS2);
-            AudioMute.Mute(GlobalValues.GMaS3);
-            AudioMute.Mute(GlobalValues.GMaS4);
-            AudioMute.Mute(GlobalValues.GMaS5);
+            AudioMute.Play(eins);
+            AudioMute.Mute(zwei);
+            AudioMute.Mute(drei);
+            AudioMute.Mute(vier);
+            AudioMute.Mute(fünf);
 
             //r1.enabled = true;
             // r2.enabled = false;
@@ -254,11 +254,11 @@ public class LifeDisplay : MonoBehaviour {
 
         if (Lifes <= 0)
         {
-            AudioMute.Mute(GlobalValues.GMaS1);
-            AudioMute.Mute(GlobalValues.GMaS2);
-            AudioMute.Mute(GlobalValues.GMaS3);
-            AudioMute.Mute(GlobalValues.GMaS4);
-            AudioMute.Mute(GlobalValues.GMaS5);
+            AudioMute.Mute(eins);
+            AudioMute.Mute(zwei);
+            AudioMute.Mute(drei);
+            AudioMute.Mute(vier);
+            AudioMute.Mute(fünf);
 
             // r1.enabled = false;
             //r2.enabled = false;
