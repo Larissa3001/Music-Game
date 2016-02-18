@@ -145,11 +145,17 @@
      <Compile Include="Assets\Scripts\ZoneScripts\Zone2Obj3.cs" />
      <Compile Include="Assets\Scripts\ZoneScripts\Zone2Obj4.cs" />
      <Compile Include="Assets\Scripts\ZoneScripts\Zone2Obj5.cs" />
+ <Reference Include="UnityEngine.Advertisements">
+ <HintPath>G:/Programme/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>G:/Programme/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>G:/Programme/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>G:/Programme/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>G:/Programme/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
